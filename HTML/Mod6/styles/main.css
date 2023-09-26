@@ -1,0 +1,29 @@
+h1 {
+  text-align: center;
+  border-bottom: 5px dashed red;
+}
+p {
+  font-size: larger;
+  text-align: center;
+  width: 300px;
+  margin-left: 14em;
+}
+
+button {
+  width: 500px;
+  height: 500px;
+  background: url(https://i.imgflip.com/3mxrl4.png);
+  font-size: larger;
+  font-weight: 900;
+  color: red;
+  margin-left: 10em;
+}
+
+ footer {
+  margin-top: 2em;
+  text-align: center;
+  border-bottom: 3px solid black;
+  border-top: 3px solid black;
+  font-style: italic
+ }
+
