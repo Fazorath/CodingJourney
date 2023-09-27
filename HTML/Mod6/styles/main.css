@@ -54,7 +54,6 @@ header img {
 }
 footer p {
   text-align: center;
-  margin-top: 5px;
 }
 main h1::first-letter { /* Capitalizing the first letter of the Heading*/
   font-size: 190%;
@@ -62,7 +61,7 @@ main h1::first-letter { /* Capitalizing the first letter of the Heading*/
 }
 
 p a {
-  font-weight: bolder;
+  font-weight: 1000;
 }
 
 ul, li {
