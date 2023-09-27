@@ -1,4 +1,86 @@
+body { 
+  width: 800px;
+  margin: 0 auto;
+  border: 4px solid black;
+  font-family: sans-serif;
+  background-image: url(bats.gif);
+  background-repeat: repeat;
+}
+.container {
+  border: 2px solid black;
+  box-shadow: 10px 10px 30px black, -10px -10px 30px black;
+  background-color: white;
+
+}
+.sidebar {
+  width: 160px;
+  height: 150px;
+  margin-top: 0px;
+  float: left;
+  position: relative;
+}
+.mainbody {
+  padding-left: 170px;
+  padding-right: 5px;
+}
+.footer {
+  border-top: 3px solid black;
+  font-size: small;
+  height: 3em;
+  background-image: linear-gradient(45deg, black, orange, white);
+  clear: both;
+}
+
+footer p {
+  text-align: center;
+  margin-top: 5;
+}
+.header { 
+  border-bottom: 2px solid black;
+  width: 798px;
+  clear: right;
+  background-image: linear-gradient(45deg, white, orange, black);
+}
+div .header {
+  padding-top: 10px;
+}
+
 header img {
-  margin-right: .25em;
-  padding-left: 2em;
+  float:left;
+  width: 120px;
+}
+header h1 {
+  font-weight: 700;
+  font-size: 250%;
+  margin: 0;  
+}
+header h2 {
+  font-weight: 700;
+  font-size: 170%;
+  margin-bottom: 15px;
+}
+main h1::first-letter {
+  font-size: 190%;
+  font-weight: bold
+}
+
+p a {
+  font-weight: bolder;
+}
+
+ul {
+  font-weight: bolder;
+}
+
+li {
+  margin: 10px 0;
+}
+
+a {
+  color: orange;
+
+}
+
+a:hover {
+  color: green;
 }
