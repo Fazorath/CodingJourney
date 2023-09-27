@@ -1,0 +1,136 @@
+html {
+  background-image: linear-gradient(to bottom, white,black);
+
+}
+body {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  width: 700px;
+  margin: 1em auto;
+  background-color: beige;
+  border: 3px solid black;
+  box-shadow: .55em .55em 10px black;
+  padding: 40px 40px 40px 40px;
+  border-radius: 1em;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  font-weight: bold;
+}
+
+a:link {
+  color: #931420;
+}
+
+a:visited {
+  color: aqua;
+}
+
+a:hover,
+a:focus {
+  color: blue
+}
+
+ul {
+  margin: 0 0 1.5em;
+}
+
+li {
+  font-size: 95%;
+  padding-bottom: .35em;
+}
+
+p {
+  font-size: 95%;
+  padding: .25em o;
+}
+
+em {
+  font-weight: bold;
+}
+
+header img {
+  float: left;
+}
+
+header h2 {
+  font-size: 220%;
+  color: black;
+  text-align: center;
+  text-shadow: 2px 2px 0 gray;
+  margin-bottom: .25em;
+  border: 2px solid black;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  box-shadow: 0em .5em 20px gray;
+  padding-bottom: 7px;
+  padding-top: 3px;
+}
+
+header h3 {
+  font-size: 130%;
+  font-style: italic;
+  text-align: center;
+  margin-top: 30px;
+}
+
+main h1 {
+  font-size: 175%;
+  margin: 1em 0 .35em;
+}
+
+main h2 {
+  font-size: 130%;
+}
+
+#contact_us {
+  margin-top: 1em;
+}
+
+a.date_passed {
+  color: gray;
+}
+
+h3 {
+  margin-top: 1em;
+  margin-bottom:.2em;
+  text-align: center;
+}
+#eg1:hover {
+  background-image: linear-gradient(to right, white 0%, red 100%);
+  padding-bottom: 50px;
+}
+
+#eg2:hover {
+  background-image: linear-gradient(45deg, red 0%, white 50%, blue 100%);
+  padding-bottom: 50px;
+}
+
+#eg3:hover {
+  background-image: linear-gradient(45deg, red 0%, red 33%,
+      white 33%, white 66%,
+      blue 66%, blue 100%);
+      padding-bottom: 50px;
+}
+
+footer {
+  margin-top: 1em;
+  border: 2px solid black;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-image: linear-gradient(to right, white, green, red);
+}
+
+footer p {
+  font-size: 80%;
+  text-align: center;
+}
