@@ -16,6 +16,6 @@ def romanToInt(s: str) -> int:
     return result
 
 # Example usage:
-roman_numeral = "V"
+roman_numeral = "VVX"
 result = romanToInt(roman_numeral)
 print(result)  # This should print 1994
