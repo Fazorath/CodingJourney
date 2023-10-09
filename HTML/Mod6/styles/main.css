@@ -82,7 +82,7 @@ main h1::first-letter {
 }
 
 p a {
-  font-weight: 1000;
+  font-weight: bolder;
 }
 
 ul,
