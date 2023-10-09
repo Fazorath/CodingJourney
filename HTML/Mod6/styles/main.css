@@ -82,11 +82,11 @@ main h1::first-letter {
 }
 
 p a {
-  font-weight: 1000;
+  font-weight: bolder;
 }
 
 ul,
-li {
+li {   
   font-weight: bolder;
   margin: 10px 0;
 }
