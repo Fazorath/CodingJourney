@@ -81,6 +81,9 @@ main h1::first-letter {
   font-weight: bold
 }
 
+/* i couldnt get bolder to work using this format
+   so i resorted to using style element inside of my <p> 
+   to get it to work i need help with it :) */
 p a {
   font-weight: bolder;
 }
