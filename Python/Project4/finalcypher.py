@@ -2,7 +2,12 @@
 ## COP 2002 0.M2
 ## OCT 6, 2023
 ## Last updated Oct 9, 2023
-## Ceasar Cypher using 2 lists and a for loop
+##  -Figured out the proper output formatting at the ITE Lab.
+## Ceasar Cypher using 2 lists and a for loop that identifies the index of the user input against
+## StartingLetters and assigns that index to the modified letters lists since they are the same lists just shifted.
+## these modified letters are then printed and concotanated into a variable and printed out.
+## I cant figure out how to create different shifts because i am not sure how to implement them in the index if it can be reviewed in lectures
+## only way i thought of was creating multiple modified alphabet lists for each shift up to a certain number but too bulky.
 
 ## 2 lists. One is going to be used for the starting index
 ## Second list is going to be used for the index of the shifted user input 
