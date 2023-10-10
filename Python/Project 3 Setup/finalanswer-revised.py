@@ -27,7 +27,7 @@ def main():
     print("This program will provide definitions to important programming terms.")
     print("Choose a number to see the term's definition.\n")
     print("Terms:")
-    
+
     # prints out the first value of the dictionary until 12 since 13 is my hidden error number.
     for key, value in programming_terms.items():
         if key <= 12:

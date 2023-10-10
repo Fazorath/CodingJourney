@@ -1,0 +1,37 @@
+html {
+  background-color: antiquewhite;
+  font-family: 'Playfair Display', Times, serif;
+}
+
+.purpose {
+  text-align: center;
+}
+
+
+.column {
+  float: left;
+  width: 33.33%;
+  text-align: center;
+  border-right: 2px black;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  padding: 25px;
+}
+
+header {
+  text-align: center;
+  margin: auto;
+  max-width: 40%;
+  padding-right: 140px;
+}
+
+header img {
+  float:left;
+  width: 150px;
+}
+a {
+  text-decoration: none;
+}
