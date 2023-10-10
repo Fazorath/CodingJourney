@@ -8,6 +8,7 @@
 ## these modified letters are then printed and concotanated into a variable and printed out.
 ## I cant figure out how to create different shifts because i am not sure how to implement them in the index if it can be reviewed in lectures
 ## only way i thought of was creating multiple modified alphabet lists for each shift up to a certain number but too bulky.
+## and i also know that a while loop is probably more efficient but i cannot seem to get it to work.
 
 ## 2 lists. One is going to be used for the starting index
 ## Second list is going to be used for the index of the shifted user input 
