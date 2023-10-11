@@ -15,15 +15,10 @@ dinnerList = ['Michael Jackson','Allah','Jesus']
 print("We have found a bigger Table!")
 print("We will have more guests !!\n\n")
 
-## Add at the end of the list
-dinnerList.append('Drake')
-
-## Add at the Beginning of the List
 ## .insert Format is 'index Position' -> 'Item'
-dinnerList.insert(0, 'Beyonce')
-
-## Add at the middle of the list
-dinnerList.insert(3, 'Tyga')
+dinnerList.append('Drake') ## Add at the end of the list
+dinnerList.insert(0, 'Beyonce') ## Add at the Beginning of the List
+dinnerList.insert(3, 'Tyga') ## Add at the middle of the list
 
 ## Checking what list looks like
 print(f"{dinnerList}\n\n")
