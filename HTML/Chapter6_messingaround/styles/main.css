@@ -98,10 +98,13 @@ main h2 {
 
 a.date_passed {
   color: gray;
+  color: #cd5c5c;
 }
 
 h3 {
+  
   margin-top: 1em;
+  border-style: solid none;
   margin-bottom:.2em;
   text-align: center;
 }
