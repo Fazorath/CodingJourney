@@ -39,14 +39,14 @@ Animal_with_char = ['Bear','Beaver','Zebra','Lions','Meerkat']
 # print("\nProve 2 Different Lists")
 # print(f"\n{Animal_with_char}")
 
-## A tuple 
-dimensions = (200, 50) ## defined with Parenthesis
+# ## A tuple 
+# dimensions = (200, 50) ## defined with Parenthesis
 
-print("\nOriginal Tuple")
-for dimension in dimensions: ## For loop in Tuples
-  print(dimension)
+# print("\nOriginal Tuple")
+# for dimension in dimensions: ## For loop in Tuples
+#   print(dimension)
 
-print("\nModified Tuple")
-dimensions = (400, 50) ## Reassigned the variables rather than changing
-for dimension in dimensions: ## For loop in Tuples
-  print(dimension)
+# print("\nModified Tuple")
+# dimensions = (400, 50) ## Reassigned the variables rather than changing
+# for dimension in dimensions: ## For loop in Tuples
+#   print(dimension)

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="main.css">
+        <title>Working with Lists and Links</title>
+    </head>
+    
+    <body>
+        <h1>Navigation Bars</h1>
+        <nav class="nav_list">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                    <a href="nav.html" target="_blank">Navigation Examples</a>
+                    <a href="">House</a>
+                    <a href="">Example</a>
+                </li>
+            </ul>
+        </nav>
+        <h1>Learning Lists and links In HTML</h1>
+        <div class="unorderedList">
+        <h2>This is a Regular unordered List</h2>
+        <ul>
+            <li>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Ut facere culpa nisi minima quisquam ipsa, velit
+                    quibusdam provident optio ducimus in harum, iusto,
+                    tenetur laborum voluptate iste. Architecto, ex eveniet. <br>
+                </p>
+            </li>
+            <li>
+                <p>This is the full setup to an unordered List</p>
+                <p><strong>Notice here since i just use another p tag instead of list item it creates
+                        separation and not another bulletpoint</strong>
+                </p>
+            </li>
+        </ul>
+    </div>
+    <div class="ContinuedOrderList">
+        <h2>An ordered list that is continued</h2>
+        <ol>
+            <li>Create a text file that contains the message you
+                want to be displayed when the executable
+                starts.</li>
+            <li>Create a batch file that copies the exercises,
+                and store it in the main folder for the files to
+                be zipped.</li>
+            <li>Create the zip file.</li>
+        </ol>
+        <h2>A List Starting at 4</h2>
+        <!-- If you dont put start at 4 it will begin at 0.-->
+        <ol start="4">
+            <li>Run the WinZip Self Extractor program and click
+                through the first three dialog boxes.</li>
+            <li>Enter the name of the zip file in the fourth
+                dialog box.</li>
+            <li>Click the Next button to test the
+                executable.</li>
+        </ol>
+        <h2>Ordered list nested within unordered List</h2>
+        <div class="orderedInUnordered">
+            <ul>
+                <li>List item in the Unordered using <strong>list-style-type: upper-roman;</strong></li>
+                <li>List item in the Unordered using <strong>list-style-type: upper-roman;</strong></li>
+                <li>List item in the Unordered using <strong>list-style-type: upper-roman;</strong></li>
+                <ol>
+                    <li>List item in the ordered List using <strong>list-style-type: decimal-leading-zero:</strong></li>
+                    <li>List item in the ordered List using <strong>list-style-type: decimal-leading-zero:</strong></li>
+                    <li>List item in the ordered List using <strong>list-style-type: decimal-leading-zero:</strong></li>
+                </ol>
+            </ul>
+        </div>
+    </div>
+    <div class="DictionaryList">
+        <h2>HTML For Description List</h2>
+        <dl>
+            <dt>Dictionary Term:</dt>
+            <dd>Dictionary Defintion, it Essentially works like a dictionary with a term <br>
+                and then a dictionary Description</dd>
+            <dt>Dictionary Term:</dt>
+            <dd>Dictionary Defintion, it Essentially works like a dictionary with a term <br>
+                and then a dictionary Description</dd>
+            <dt>Dictionary Term:</dt>
+            <dd>Dictionary Defintion, it Essentially works like a dictionary with a term <br>
+                and then a dictionary Description</dd>
+        </dl>
+    </div>
+    <div class="css">
+
+        <h2>Properties for formatting</h2>
+        <h3>Properties for formatting unordered List</h3>
+        <div class="DescriptionList">
+            <dl>
+                <dt>Line-style-type:</dt>
+                <dd>The type of bullet thats used for the items in the list. <br>
+                    See the table below for possible values. The default is a disc.</dd>
+                <dt>List-style-image:</dt>
+                <dd>The URL for an image thats used as the bullet</dd>
+            </dl>
+        </div>
+        <h3>Values for the list-style-type property
+            of an unordered list</h3>
+        <div class="table">
+            <table>
+                <tr>
+                    <th>disc</th>
+                    <th>solid circle</th>
+                </tr>
+                <tr>
+                    <th>circle</th>
+                    <th>hollow circle</th>
+                </tr>
+                <tr>
+                    <th>square</th>
+                    <th>solid square</th>
+                </tr>
+                <tr>
+                    <th>none</th>
+                    <th>no bullet</th>
+                </tr>
+            </table>
+
+            <h2>HTML for an Unordered list that will be Aligned</h2>
+            <div class="alignedList">
+                <h2>Popular web browsers</h2>
+                <ul>
+                    <li>Chrome</li>
+                    <li>Safari</li>
+                    <li>Edge</li>
+                    <li>Firefox</li>
+                    <li>Opera</li>
+                </ul>
+                <h3>Align in CSS</h3>
+                <img src="Screenshot 2023-10-12 012657.png" alt="Code Example">
+            </div>
+
+
+        </div>
+        <div class="DictionaryList">
+            <dt>href</dt>
+            <dd>The URL that identifies the page that the link will go to</dd>
+            <dt>title</dt>
+            <dd>The Description is deplayed as a tooltip.</dd>
+        </div>
+    
+    </div>
+
+</body>
+
+</html>
