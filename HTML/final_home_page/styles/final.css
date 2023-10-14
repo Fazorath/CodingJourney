@@ -12,7 +12,8 @@ main {
     padding: 25px;
     padding-bottom: 0px;
     margin: 25px auto;
-    width: 1000px;
+    width: 900px;
+    font-size: medium;
 }
 .purpose { /* Purpose block and its settings*/
   text-align: center;
