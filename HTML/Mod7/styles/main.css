@@ -11,9 +11,6 @@ body {
   /*Border Around the body */
   font-family: Verdana, Arial, Helvetica, sans-serif;
   background-repeat: repeat;
-}
-
-.container {
   box-shadow: 10px 10px 30px black, -10px -10px 30px black;
   /* The Shadow*/
   background-color: white;
@@ -68,18 +65,18 @@ padding: 15px;
     clear: both;
 }
 
-#sidebar ul {
+aside ul {
   list-style-type: none;
   padding-left: 18px;
 }
 
-#sidebar ul li {
+aside ul li {
   width: 135px;
   margin-bottom: 1em;
   border: 2px solid black;
 }
 
-#sidebar ul li a {   
+aside ul li a {   
  display: block;
  font-weight: bolder;
  background-color: orange;
@@ -88,7 +85,7 @@ padding: 15px;
  text-decoration: none;
 }
 /*id of the sidebar*/
-#sidebar {
+aside {
   width: 160px;
   /* Width */
   height: 150px;
@@ -98,14 +95,14 @@ padding: 15px;
   position: relative;
 }
 
-.header {
+header {
     border-bottom: 3px solid black;
     width: 770px; /* Header Linear Gradient Adjustment*/
     padding: 15px;
     background-image: linear-gradient(45deg, white 0%, orange 75%, black 100%);
 }
 
-.mainbody {
+main {
   padding-left: 190px;
   /* Moving body to the left to make spce for Sidebar*/
   padding-right: 5px;
@@ -126,7 +123,7 @@ padding: 15px;
   margin-bottom: 15px;
 }
 
-.footer {
+footer {
   border-top: 3px solid black;
   font-size: small;
   height: 3em;
@@ -162,7 +159,7 @@ a {
 
 }
 
-#sidebar ul li a:hover {
+aside ul li a:hover {
   background-color: hwb(36 0% 8%);
   color: green;
 }

@@ -19,7 +19,7 @@ body {
   background-color: white;
 }
 /*id of the sidebar*/
-#sidebar {
+aside {
   width: 160px;
   /* Width */
   height: 150px;
