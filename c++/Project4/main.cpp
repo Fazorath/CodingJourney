@@ -1,5 +1,7 @@
-//Yoenis Hernandez
-//COP2000.0M2 
+// Yoenis Hernandez
+// COP2000.0M2 
+// 10/13/23
+// Last Updated: 10/17/23
 // Open a text file using the fstream from chapter 5,
 // Read from the file and find how many names and how many characters are in each name
 // Used 1 loop initially but would result in something like this:
