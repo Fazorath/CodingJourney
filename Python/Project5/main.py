@@ -1,2 +1,0 @@
-PortNumArray = []
-PortNumName = []
