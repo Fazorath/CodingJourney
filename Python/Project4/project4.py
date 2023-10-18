@@ -4,8 +4,9 @@
 ## Last updated Oct 9, 2023
 ## - Redid due to message in latest lecture about help. 
 ## - I showed up to the ITE student hours and recieved some help from the tutor
+## - Rather be safe than sorry dont know if it counts 🤷🏻‍♂️ 
 ## ------------------------------------------------------------------------------------------------------------------
-##  -Figured out the proper output formatting at the ITE Lab.
+## Figured out the proper output formatting at the ITE Lab.
 ## Ceasar Cypher using 2 lists and a for loop that identifies the index of the user input against
 ## StartingLetters and assigns that index to the modified letters lists since they are the same lists just shifted.
 ## these modified letters are then printed and concotanated into a variable and printed out.
