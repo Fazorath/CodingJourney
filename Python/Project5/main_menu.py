@@ -1,8 +1,12 @@
 ## Arrays
-PortNums = [20,21,22,23,25,53,67,68,80,110,137,139,143,161,162,389,443,445,3389]
-PortProto = ['FTP','FTP','SSH','Telnet','SMTP','DNS','DHCP','DHCP','HTTP','POP3','netBIOS','netBIOS','IMAP','SNMP','SNMP','LDAP','HTTPS','SMB','RDP']
-print(PortProto[2])
+portNumArray = [20,21,22,23,25,53,67,68,80,110,137,139,143,161,162,389,443,445,3389]
+portNameArray = ['FTP','FTP','SSH','Telnet','SMTP','DNS','DHCP','DHCP','HTTP','POP3','netBIOS','netBIOS','IMAP','SNMP','SNMP','LDAP','HTTPS','SMB','RDP']
 
+
+## numToName(portNumArray, portNameArray, portNumber) 
+## - which uses the portNumber to find it in the portNumArray  and find the corresponding port name in the portNameArray.
+def numToName(portNumArray,portNameArray,portNumber):
+randomport = portNumArray[]
 
 ## Main Menu Function
 def getinput():
