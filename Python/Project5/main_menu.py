@@ -1,3 +1,5 @@
+import random
+
 ## Arrays
 portNumArray = [20,21,22,23,25,53,67,68,80,110,137,139,143,161,162,389,443,445,3389]
 portNameArray = ['FTP','FTP','SSH','Telnet','SMTP','DNS','DHCP','DHCP','HTTP','POP3','netBIOS','netBIOS','IMAP','SNMP','SNMP','LDAP','HTTPS','SMB','RDP']
@@ -6,7 +8,13 @@ portNameArray = ['FTP','FTP','SSH','Telnet','SMTP','DNS','DHCP','DHCP','HTTP','P
 ## numToName(portNumArray, portNameArray, portNumber) 
 ## - which uses the portNumber to find it in the portNumArray  and find the corresponding port name in the portNameArray.
 def numToName(portNumArray,portNameArray,portNumber):
-randomport = portNumArray[]
+  ans = ''
+  indexnum = random.randrange(0,20)
+  correct = portNameArray[indexnum]
+  print(f"What is the protocol for Port Num {indexnum}? ")
+  print(correct)
+
+numToName(portNumArray,portNameArray,22)
 
 ## Main Menu Function
 def getinput():
