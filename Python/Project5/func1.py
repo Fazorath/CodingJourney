@@ -1,19 +1,17 @@
 ## Function one is 
 ## def numToName(portNumArray,portNameArray,portNumber):
-
+import random
 ## Arrays
 portNumArray = [20,21,22,23,25,53,67,68,80,110,137,139,143,161,162,389,443,445,3389]
 portNameArray = ['FTP','FTP','SSH','Telnet','SMTP','DNS','DHCP','DHCP','HTTP','POP3','netBIOS','netBIOS','IMAP','SNMP','SNMP','LDAP','HTTPS','SMB','RDP']
 
 
-
+randPort = random.choice(portNumArray)
+print(randPort) ## Can we use choice or only randrange
 
 def numToName(portNumber,portNumArray=[20,21,22,23,25,53,67,68,80,110,137,139,143,161,162,389,443,445,3389],portNameArray=['FTP','FTP','SSH','Telnet','SMTP','DNS','DHCP','DHCP','HTTP','POP3','netBIOS','netBIOS','IMAP','SNMP','SNMP','LDAP','HTTPS','SMB','RDP']
 ,): # Array of Num and Array of Name Player input
   ## Choose a random port Number
-
-  portNumber=portNameArray.popitem()
-
   ## display message with the random port number
   playeranswer = input(f"What is the Protocol name for this Port Number {portNumber}: ")
   ## ask user for their choice
@@ -21,4 +19,4 @@ def numToName(portNumber,portNumArray=[20,21,22,23,25,53,67,68,80,110,137,139,14
   ## if right 
   ## else
 
-numToName(33)
+numToName(randPort)
