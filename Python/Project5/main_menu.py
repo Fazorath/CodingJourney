@@ -19,6 +19,7 @@ def main():
 
             if choice == '1':
                 print("\nIdentify Port Number:\n")
+                ## Call num to name function 
             elif choice == '2':
                 print("\nIdentify Port Protocol:\n")
             elif choice == '3':
@@ -28,7 +29,7 @@ def main():
             else:
                 break
    
-   getinput()
+    getinput()
 
 
 main()
