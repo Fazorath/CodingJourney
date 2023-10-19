@@ -1,4 +1,4 @@
-from func1 import numToName
+
 
 # Main Menu Function
 
@@ -15,19 +15,20 @@ def main():
             portNameArray = ['FTP', 'FTP', 'SSH', 'Telnet', 'SMTP', 'DNS', 'DHCP', 'DHCP', 'HTTP',
                              'POP3', 'netBIOS', 'netBIOS', 'IMAP', 'SNMP', 'SNMP', 'LDAP', 'HTTPS', 'SMB', 'RDP']
 
-            choice = int(input("Choice: "))
+            choice = (input("Choice: "))
 
-            if choice == 1:
+            if choice == '1':
                 print("\nIdentify Port Number:\n")
-                numToName(portNumArray, portNameArray, portNumber)
-            elif choice == 2:
+            elif choice == '2':
                 print("\nIdentify Port Protocol:\n")
-            elif choice == 3:
+            elif choice == '3':
                 print("\nHopefully this program helped in studying !!")
+            elif choice == 'm':
+                getinput() ## Loops if user presses M as their Choice
             else:
-                choice = 0
-                print("\nInvalid Choice Choose 1 - 2 - 3 please :) ")
-    getinput()
+                break
+   
+   getinput()
 
 
 main()
