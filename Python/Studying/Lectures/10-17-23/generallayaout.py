@@ -41,16 +41,17 @@ def getinput():
 
 
 def main(): ## What you want to happen / intro to pseudocode
-  print(""" 
-Project must start by checking rubric:
-1. Print a menu
-1.1 Menu needs 3 options
-1.2 Take user input This will happen multiple times user get input function
+#   print(""" 
+# Project must start by checking rubric:
+# 1. Print a menu
+# 1.1 Menu needs 3 options
+# 1.2 Take user input This will happen multiple times user get input function
 
-2. If user input 1
-3. if user input is 2
-4. else print end message
-        """)
+# 2. If user input 1
+# 3. if user input is 2
+# 4. else print end message
+#         """)
+  # getinput()
   pass
  # Call Every other Function
 
