@@ -17,18 +17,21 @@ def numToName(portNumber,portNumArray=[20,21,22,23,25,53,67,68,80,110,137,139,14
         randomnumber = portNumArray[random_index]
         correct = portNameArray[random_index]
         prompt = f"What is the Port Protocol to this Port Number (m to menu) {randomnumber}: "
+        counter = 1 #add counter for hint. this is extra.
         
         while True:
             question = input(prompt)
-            
             if question == correct:
                 print(f"Correct: {correct} !\n")
                 break  # Break the inner loop and generate a new random number for the next question
             elif question == 'm':
                 print("Choice: menu")
                 return  # Exit the function if the user chooses the menu
+            # elif counter >= 5: add a hint 
+            #     print(f"Hint: {correct[0:2]}\n")
             else:
                 print(f"Sorry, Not Quite Right!\nTry Again:\n")
+                counter += 1
  # which uses the portNumber to find it in the portNumArray  and find the corresponding port name in the portNameArray.
 
 
