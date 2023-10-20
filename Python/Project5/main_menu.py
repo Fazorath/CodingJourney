@@ -22,7 +22,6 @@ def main():
 
 
 def getinput():
-    
     choice = (input("Choice: "))
     if choice == '1':
         print("Identify Port Number:\n")
@@ -33,12 +32,8 @@ def getinput():
         randName = random.randrange(1,19)
     elif choice == '3':
         print("Hopefully this program helped in studying !!")
-    elif choice == 'm':
-        print("Main menu:")
-        getinput() ## Loops if user presses M as their Choice
     else:
         print("Try one more time with one of the numbers mane  \n")
-        getinput()
     return choice
     
 
