@@ -36,7 +36,7 @@ def numToName(portNumber,portNumArray=[20,21,22,23,25,53,67,68,80,110,137,139,14
             elif question == 'm': # if input is m
                 print("Choice: Menu")
                 return  # Exit the function 
-            elif question == "": # if input is black prompt question again.
+            elif question == "": # if input is blank prompt question again.
                 print(question)
             elif question == 'hint':  ## Messing with hints
                 print(f"Hint: {correct[0:2]}\n")
@@ -45,7 +45,7 @@ def numToName(portNumber,portNumArray=[20,21,22,23,25,53,67,68,80,110,137,139,14
 # which uses the portNumber to find it in the portNumArray  and find the corresponding port name in the portNameArray.
 
 
-## Essentally the same as function above EXCEPT
+## Essentally the same as function above EXCEPT look at comment
 def nameToNum(portNumber,portNumArray=[20,21,22,23,25,53,67,68,80,110,137,139,143,161,162,389,443,445,3389],portNameArray=['FTP', 'FTP', 'SSH', 'Telnet', 'SMTP', 'DNS', 'DHCP', 'DHCP', 'HTTP',
             'POP3', 'netBIOS', 'netBIOS', 'IMAP', 'SNMP', 'SNMP', 'LDAP', 'HTTPS',
             'SMB', 'RDP']):
@@ -58,6 +58,7 @@ def nameToNum(portNumber,portNumArray=[20,21,22,23,25,53,67,68,80,110,137,139,14
         while True:
             question = input(prompt)
             if question == str(correct): #Since input returns a string i assigned the correct variable to also be a string
+                ## Input is a string but 'correct' variable was int because of the array.
                 print(f"Correct Answer: {correct} !\n")
                 break 
             elif question == "m":
