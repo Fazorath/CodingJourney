@@ -27,8 +27,8 @@ def numToName(portNumber,portNumArray=[20,21,22,23,25,53,67,68,80,110,137,139,14
             elif question == 'm':
                 print("Choice: menu")
                 return  # Exit the function if the user chooses the menu
-            # elif counter >= 5: add a hint 
-            #     print(f"Hint: {correct[0:2]}\n")
+            elif question == 'hint': 
+                print(f"Hint: {correct[0:2]}\n")
             else:
                 print(f"Sorry, Not Quite Right!\nTry Again:\n")
                 counter += 1
@@ -39,25 +39,28 @@ def numToName(portNumber,portNumArray=[20,21,22,23,25,53,67,68,80,110,137,139,14
 def nameToNum(portNumber,portNumArray=[20,21,22,23,25,53,67,68,80,110,137,139,143,161,162,389,443,445,3389],portNameArray=['FTP', 'FTP', 'SSH', 'Telnet', 'SMTP', 'DNS', 'DHCP', 'DHCP', 'HTTP',
             'POP3', 'netBIOS', 'netBIOS', 'IMAP', 'SNMP', 'SNMP', 'LDAP', 'HTTPS',
             'SMB', 'RDP']):
-  randomname = portNameArray[portNumber]
-  correctnum = portNumArray[portNumber]
-  print(correctnum)
-  iscorrect = True
-  question = int(input(f"What is the Correct Port Number for this Protocol - {randomname}: "))
-  
-  while(question):
-      if(question==correctnum):
-          print("Correct!!\nHere is another one:\n")
-          randnumber()
-      elif(question==''):
-          question
-      elif(question=="m"):
-          print(f"Choice: Menu") 
-          break
-      else:
-          print("\nSorry, Not Quite Right !\nTry Again:\n")
-          randnumber()
-          nameToNum(randnumber())
+    while True:
+        random_index = randname()
+        randomName = portNameArray[random_index]
+        correct = portNumArray[random_index]
+        prompt = f"What is the Port Number to this Port Protocol (m to menu) {randomName}: "
+        print(randomName)
+        print(correct)
+        counter = 1 #add counter for hint. this is extra.
+        
+        while True:
+            question = int(input(prompt))
+            if question == correct:
+                print(f"Correct: {correct} !\n")
+                break  # Break the inner loop and generate a new random number for the next question
+            elif question == :
+                print("Choice: menu")
+                return  # Exit the function if the user chooses the menu
+            elif question == 'hint': 
+                print(f"Hint: {correct}\n")
+            else:
+                print(f"Sorry, Not Quite Right!\nTry Again:\n")
+                counter += 1
       # which uses the portName to find it in the portNameArray  and find the corresponding port number in the portNumArray.
  
 
@@ -75,10 +78,12 @@ def getinput():
 
 
 def randnumber(port=port):
-    randnumber = random.randint(0, len(port) - 1)
+    randnumber = random.randrange(0, len(port) - 1)
     return randnumber
 
-
+def randname(name=protocol):
+    randname = random.randrange(0,len(name)-1)
+    return randname
 
 def ifusr(userchoice):
    ## USER INPUT
