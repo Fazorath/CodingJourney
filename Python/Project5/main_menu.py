@@ -29,7 +29,7 @@ def numToName(portNumber,portNumArray=[20,21,22,23,25,53,67,68,80,110,137,139,14
         prompt = f"What is the Protocol for port {randomnumber} (m=menu)? " # Prompt
         
         while True: # main while loop to validate
-            question = input(prompt) # input assigned to variable
+            question = input(prompt).rstrip # input assigned to variable
             if question == correct: # if input is equal to correct variable assigned
                 print(f"Correct Answer: {correct} !\n")  # added to show the correct answer not in rubric but looks cleaner
                 break  # Break the inner loop and generate a new random number for the next question
@@ -38,12 +38,11 @@ def numToName(portNumber,portNumArray=[20,21,22,23,25,53,67,68,80,110,137,139,14
                 return  # Exit the function 
             elif question == "": # if input is blank prompt question again.
                 print(question)
-            elif question == 'hint':  ## Messing with hints
+            elif question =='hint':  ## Messing with hints
                 print(f"Hint: {correct[0:2]}\n")
             else:
                 print(f"Sorry, Not Quite Right!\nTry Again:\n")
 # which uses the portNumber to find it in the portNumArray  and find the corresponding port name in the portNameArray.
-
 
 ## Essentally the same as function above EXCEPT look at comment
 def nameToNum(portNumber,portNumArray=[20,21,22,23,25,53,67,68,80,110,137,139,143,161,162,389,443,445,3389],portNameArray=['FTP', 'FTP', 'SSH', 'Telnet', 'SMTP', 'DNS', 'DHCP', 'DHCP', 'HTTP',
@@ -91,17 +90,18 @@ def randname(name=protocol):
     randname = randrange(0,len(name)-1)
     return randname
 
+## USER INPUT
 def ifusr(userchoice):
-   ## USER INPUT
+   
     if userchoice == '1':
       print("\nChoice 1: Identifiy Port Protocol\n")
-      numToName(randnumber()) # call numtoname func with port number arg being the function to create a random port
+      numToName(randnumber()) # call numtoname func with port number arg being the function to create a random number
     elif userchoice == '2':
       print("\nChoice 2: Identifiy Port Name\n")
       nameToNum(randname()) # call nametonum func with port name arg being the function to create a random name
-    
-    
-    
+
+## main function from lecture
+## - a loop to display  menu
 def main():
 	userchoice = getinput() #call input function
 	while(userchoice != '3'): # if user doesnt select quit
