@@ -29,17 +29,17 @@ def numToName(portNumber,portNumArray=[20,21,22,23,25,53,67,68,80,110,137,139,14
         prompt = f"What is the Protocol for port {randomnumber} (m=menu)? " # Prompt
         
         while True: # main while loop to validate
-            question = input(prompt).rstrip # input assigned to variable
+            question = input(prompt) # input assigned to variable
             if question == correct: # if input is equal to correct variable assigned
                 print(f"Correct Answer: {correct} !\n")  # added to show the correct answer not in rubric but looks cleaner
                 break  # Break the inner loop and generate a new random number for the next question
             elif question == 'm': # if input is m
                 print("Choice: Menu")
                 return  # Exit the function 
-            elif question == "": # if input is blank prompt question again.
+            elif question =="": # if input is blank prompt question again.
                 print(question)
             elif question =='hint':  ## Messing with hints
-                print(f"Hint: {correct[0:2]}\n")
+                print(f"Hint: {correct}\n")
             else:
                 print(f"Sorry, Not Quite Right!\nTry Again:\n")
 # which uses the portNumber to find it in the portNumArray  and find the corresponding port name in the portNameArray.
