@@ -1,7 +1,6 @@
-Popular Screen Resolutions and how to incorporate them into HTML design
+# Popular Screen Resolutions and how to incorporate them into HTML design
 
+# Text Rollover using 
 
-Text Rollover using 
-
-
-Figoure out how to use image maps.
+# Figure out how to use image maps.
+  - More on Polygons and how to choose specific sections of text.
