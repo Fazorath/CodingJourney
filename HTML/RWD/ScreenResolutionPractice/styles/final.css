@@ -12,7 +12,7 @@ main {
     padding: 25px;
     padding-bottom: 0px;
     margin: 25px auto;
-    width: 900px;
+    width: 1200px;
     font-size: medium;
 }
 /* start of desktop styles - no media query */
@@ -39,11 +39,19 @@ main {
 }
 .column h2 {
     text-decoration: underline;
+    font-size: 2.5em;
 }
 .column { /* Columns in the middle and their settings*/
-  float: left;
-  width: 33.33%;
+  font-size: 70%;
+float: left;
+  width: 30.33%;
+  height: 400px;
   text-align: center;
+  padding: 15px;
+    border-right: 2px solid black;
+}
+#last.column {
+    border-right: none;
 }
 .row:after {
   content: "";
@@ -70,9 +78,11 @@ header img { /* Image Changes*/
 
 .detailedlook {
     border-top: 2px solid black;
+    text-align: center;
 }
-.detailedlook a {
+.detailedlook ul li {
   text-decoration: none;
+  list-style-type: none;
   font-size: x-large;
   /* Getting rid of the blue lin
   and making the font a size bigger*/
