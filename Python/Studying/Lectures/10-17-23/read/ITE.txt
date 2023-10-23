@@ -1,0 +1,36 @@
+07/20/2022  11:42 PM    <DIR>          .
+07/20/2022  11:42 PM    <DIR>          ..
+08/12/2020  10:06 PM    <DIR>          .android
+06/16/2022  12:07 PM    <DIR>          .dotnet
+09/19/2019  11:51 AM    <DIR>          .eclipse
+07/07/2022  04:51 PM    <DIR>          .idlerc
+01/10/2022  01:00 PM    <DIR>          .MemuHyperv
+06/16/2022  12:50 PM    <DIR>          .ms-ad
+09/19/2019  12:01 PM                 0 .node_repl_history
+09/19/2019  02:00 PM    <DIR>          .p2
+01/10/2022  04:55 PM               340 .packettracer
+01/10/2022  04:52 PM    <DIR>          .scenebuilder
+09/19/2019  10:10 AM    <DIR>          .thumbnails
+09/19/2019  11:51 AM    <DIR>          .tooling
+07/13/2022  11:28 AM    <DIR>          .VirtualBox
+01/10/2022  01:03 PM    <DIR>          .vscode
+09/29/2020  12:04 PM    <DIR>          3D Objects
+09/19/2019  10:16 AM    <DIR>          Cisco Packet Tracer 7.2.2
+01/10/2022  04:55 PM    <DIR>          Cisco Packet Tracer 8.1.0
+09/29/2020  12:04 PM    <DIR>          Contacts
+07/16/2022  01:00 AM    <DIR>          Desktop
+07/16/2022  11:29 AM    <DIR>          Documents
+07/20/2022  11:43 AM    <DIR>          Downloads
+09/19/2019  11:48 AM    <DIR>          eclipse
+09/19/2019  11:51 AM    <DIR>          eclipse-workspace
+09/29/2020  12:04 PM    <DIR>          Favorites
+09/29/2020  12:04 PM    <DIR>          Links
+09/29/2020  12:04 PM    <DIR>          Music
+07/20/2022  11:42 PM                10 myDate.txt
+09/19/2019  09:56 AM    <DIR>          OneDrive
+09/29/2020  12:04 PM    <DIR>          Pictures
+09/29/2020  12:04 PM    <DIR>          Saved Games
+09/29/2020  12:04 PM    <DIR>          Searches
+09/19/2019  12:22 PM    <DIR>          source
+09/29/2020  12:04 PM    <DIR>          Videos
+09/20/2019  04:01 PM    <DIR>          VirtualBox VMs
