@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- web page title -->
+	<title>Viewport - Popular Screen Resolutions: Designing for All</title>
+	<!-- declare character encoding -->
+	<meta charset="utf-8">
+	<!-- author of the document -->
+	<meta name="author" content="Larry Pfaff">
+	<!-- Keywords and Description for Search Engines -->
+	<meta name="description" content="brief page description">
+	<meta name="keywords" content="HTML, CSS, javaScript">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- stylesheet link -->
+	<link rel="stylesheet" type="text/css" href="../css/cgs1820.css" >
+<style> /* CSS for the Roll over, it is much simpler lol */
+#image1 {
+    background-image: url("../images/h1.png");
+    width: 165px;
+    height: 81px;
+}
+#image1:hover {
+    background-image: url("../images/h2.png");
+}
+
+</style>
+</head>
+<body>
+<header>
+<h1>Rollover samples</h1>
+</header>
+<main>
+<h2>CSS - Image Rollover Test</h2>
+<p id="image1"></p>
+
+<h2>JavaScript - Image Rollover Test</h2>
+<a href="#" onmouseover="onMouseOver()" onmouseout="onMouseOut()">
+    <img src="../images/h1.png" id="img1" alt="h1 image to begin"></a>
+
+<script language="javascript"> /* Javascript for the Rollover*/
+     function onMouseOut(){
+		document.images["img1"].src="../images/h1.png";
+     };
+     function onMouseOver(){
+		document.images["img1"].src="../images/h2.png";
+     };
+</script>
+</main>
+<footer></footer>
+</body>
+</html>

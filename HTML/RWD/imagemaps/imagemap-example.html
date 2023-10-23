@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- web page title -->
+	<title>Viewport - Popular Screen Resolutions: Designing for All</title>
+	<!-- declare character encoding -->
+	<meta charset="utf-8">
+	<!-- author of the document -->
+	<meta name="author" content="Larry Pfaff">
+	<!-- Keywords and Description for Search Engines -->
+	<meta name="description" content="brief page description">
+	<meta name="keywords" content="HTML, CSS, javaScript">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- stylesheet link -->
+	<link rel="stylesheet" type="text/css" href="../css/cgs1820.css" >
+<style>
+#language {
+    display: block;
+    margin: 0 auto;
+    width: 260px;
+    height: 232px;
+}
+#books {
+    display: block;
+    margin: 0 auto;
+    width: 428px;
+    height: 326px;
+}
+</style>
+</head>
+<body>
+<header>
+<h1>Imagemap</h1>
+</header>
+<main>
+<h2>Imagemap demo</h2>
+<img id="language" usemap="#infographic" src="../images/language.png"  alt="language infographic"/>
+<map name="infographic">
+    <area shape="poly" coords="130,147,200,107,254,219,130,228"
+          href="https://developer.mozilla.org/docs/Web/HTML"
+          target="_blank" title="HTML" />
+    <area shape="poly" coords="130,147,130,228,6,219,59,107"
+          href="https://developer.mozilla.org/docs/Web/CSS"
+          target="_blank" title="CSS" />
+    <area shape="poly" coords="130,147,200,107,130,4,59,107"
+          href="https://developer.mozilla.org/docs/Web/JavaScript"
+          target="_blank" title="JavaScript" />
+</map>
+
+
+<p>&nbsp;</p>
+
+
+<img id="books" src="../images/murachbooks.png"  alt="PHP/MySQL and JavaScript/jQuery books"  usemap="#books">
+<map name="books">
+    <area 
+          shape="poly" coords="217,110,189,7,5,57,67,284,179,254"
+		  href="https://www.murach.com/shop/murach-s-php-and-mysql-2nd-edition-detail"
+          target="_self" title="PHP and MySQL book"  >
+    <area 
+          shape="poly" coords="238,40,175,269,358,319,419,90"
+		  href="https://www.murach.com/shop/murach-s-javascript-and-jquery-4th-edition-detail"
+          target="_self" title="JavaScript/jQuery book"  >
+</map>
+
+</main>
+<footer></footer>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+    </style>
+    <title>Image Maps</title>
+</head>
+<body>
+    <!-- Only difference is the use of a usemap-->
+    <img src="carcollage.jpg" alt="Picture of alot of cars" usemap="#carmap">
+
+    <!-- create the actual image map -->
+    <map name="carmap">
+		<!-- Coords are the pixel positions on the image -->
+        <area shape="rect" coords="135,310,700,500" href="https://viper.com/" alt="Viper" target="_blank">
+        <area shape="rect" coords="200,160,370,230" href="https://en.wikipedia.org/wiki/Honda_NSX" alt="NSX" target="_blank" onclick="myFunction()">
+        <area shape="rect" coords="260,130,810,250" href="chevy.com" alt="Camaro maybe lol" target="_blank">
+		<!-- Many different types of shapes -->
+		<!-- first center of the circle then the radius -->
+		<area shape="circle" coords="350,350, 100" href="" alt="">
+		<!-- Default defines the entire region -->
+		<area shape="default" coords="" href="" alt="">
+		<!-- Positions come in pairs but can put as many as need be to fill shape -->
+		<area shape="poly" coords="" href="" alt="">
+	</map>
+	
+
+<!-- Image Maps and Javascript use On click. -->
+<!-- First ever Actual JAVASCRIPT -->
+<!-- 10/23/23 -->
+<script>
+	function myFunction(){
+		alert("You clicked the NSX!");
+	}
+</script>
+
+</body>
+</html>

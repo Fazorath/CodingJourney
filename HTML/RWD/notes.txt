@@ -1,0 +1,7 @@
+Popular Screen Resolutions and how to incorporate them into HTML design
+
+
+Text Rollover using 
+
+
+Figoure out how to use image maps.
