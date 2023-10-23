@@ -14,6 +14,7 @@ def calculator():
         if operator == '+':
             result = float(num1) + float(num2)
         elif operator == '-':
+            
             result = float(num1) - float(num2)
         elif operator == '*':
             result = float(num1) * float(num2)
