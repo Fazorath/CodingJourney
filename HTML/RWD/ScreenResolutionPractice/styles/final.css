@@ -2,6 +2,7 @@ html {
     background-color: antiquewhite;
     font-family: 'Playfair Display', Times, serif;
     font-size: larger;
+    width: 100%;
     
 }
 main {
@@ -12,28 +13,10 @@ main {
     padding: 25px;
     padding-bottom: 0px;
     margin: 25px auto;
-    width: 1200px;
+    width: 80%;
     font-size: medium;
 }
-/* start of desktop styles - no media query */
 
-@media screen and (max-width: 991px) {
-
-/* start of large tablet styles */
-
-}
-
-@media screen and (max-width: 767px) {
-
-/* start of medium tablet styles */
-
-}
-
-@media screen and (max-width: 479px) {
-
-/* start of phone styles */
-
-}
 .purpose { /* Purpose block and its settings*/
   text-align: center;
 }
@@ -44,8 +27,8 @@ main {
 .column { /* Columns in the middle and their settings*/
   font-size: 70%;
 float: left;
-  width: 30.33%;
-  height: 400px;
+  width: 30%;
+  height: 25%;
   text-align: center;
   padding: 15px;
     border-right: 2px solid black;
@@ -62,14 +45,15 @@ float: left;
 
 header { /* Header Settings*/
   text-align: center;
-  margin: auto;
-  max-width: 40%;
-  padding-right: 140px;
 }
 
 header img { /* Image Changes*/
-  float:left;
+  float: left;
   width: 150px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
 }
 .column a {
     text-decoration: none;
