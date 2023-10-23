@@ -17,6 +17,9 @@ port = [20,21,22,23,25,53,67,68,80,110,137,139,143,161,162,389,443,445,3389]
 protocol = ['FTP', 'FTP', 'SSH', 'Telnet', 'SMTP', 'DNS', 'DHCP', 'DHCP', 'HTTP',
             'POP3', 'netBIOS', 'netBIOS', 'IMAP', 'SNMP', 'SNMP', 'LDAP', 'HTTPS',
             'SMB', 'RDP']
+## Checking if right right Lenght on the List.
+# print(len(port))
+# print(len(protocol))    
 
 ## Finished OCT 20
 def numToName(portNumber,portNumArray=[20,21,22,23,25,53,67,68,80,110,137,139,143,161,162,389,443,445,3389], portNameArray=['FTP', 'FTP', 'SSH', 'Telnet', 'SMTP', 'DNS', 'DHCP', 'DHCP', 'HTTP',
