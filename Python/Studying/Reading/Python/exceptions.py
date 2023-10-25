@@ -57,3 +57,11 @@ countwords(path)
 bookfiles = ['helloworld.txt','dune.txt','airplane.txt']
 for file in bookfiles:
     countwords(file)
+
+## Failing silently
+try:
+    print(5/0)
+except ZeroDivisionError:
+    pass
+else:
+    print("No errors found")
