@@ -19,6 +19,8 @@ body {
 }
 
 .nav_menu ul {
+    font-size: 1.5em;
+    font-weight: bolder;
     list-style: none;
     position: relative;
     background-color: black;
@@ -36,7 +38,7 @@ body {
 }
 
 .nav_menu .dropdown ul li {
-    width: 130px; /* Adjusted the width of the dropdown to match new text align rather than margin.*/
+    width: 15em; /* Adjusted the width of the dropdown to match new text align rather than margin.*/
     text-align: center;
     padding: 1em;
 }
@@ -44,6 +46,8 @@ body {
 .nav_menu .dropdown ul {
     padding: 0;
     padding-top: .6em;
+    font-size: .5em;
+    width: 15em;
 }
 
 .nav_menu .dropdown ul li:hover {
@@ -61,7 +65,7 @@ body {
 
 .nav_menu ul li {
     float: left;
-    width: 150px; /* Created a set with for the list items in nav*/
+    width: 15em; /* Created a set with for the list items in nav*/
 }
 
 .nav_menu ul ul {
@@ -73,6 +77,8 @@ body {
 /* I Do not understand this !! */
 .nav_menu ul ul li {
     float: none;
+    font-size: 1.5em;
+    width: 15em;
 }
 
 .nav_menu ul li:hover>ul {
@@ -85,27 +91,28 @@ body {
     clear: both;
 }
 
-nav aside ul {
+aside nav ul {
     list-style-type: none;
     float: left;
     margin-top: 0;
     padding-left: 0px;
-    margin-bottom: 400px;
+    margin-bottom: 40em;
 }
 
-nav aside ul li {
-    width: 130px;
+aside nav ul li {
+    width: 14em;
     margin-bottom: .5em;
     border: .2em solid black;
     background-color: orange;
-    margin: 1.6em;
+    margin: 2em;
 
 }
 
-nav aside ul li a {
+aside nav ul li a {
+    font-size: 2em;
     display: block;
     /* clickable box */
-    padding: .5em 0 .5em .5em;
+    padding: .5em 0em .5em .5em;
     /* surrounding space */
     text-decoration: none;
     /* links are not underlined */
@@ -120,37 +127,46 @@ aside ul li a:hover { /* Moved to appropriate positioning within css file.*/
 
 header {
     border-bottom: .1em solid black;
-    width: 98.5%;
+    width: 99%;
     /* Header Linear Gradient Adjustment*/
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 1rem;
+    padding-top: 1em;
+    padding-bottom: .6em;
+    padding-left: 1em;
     background-image: linear-gradient(45deg, white 0%, orange 75%, black 100%);
 }
 
 main {
     /* Moving body to the left to make spce for Sidebar*/
-    padding-right: 5px;
-    font-weight: 500;
+    padding-right: .5em;
+    font-size: 1.5em;
+    padding-left: 12em;
+}
+
+main h1::first-letter {
+    /* Capitalizing the first letter of the Heading*/
+    font-size: 2em;
+    font-weight: bold
 }
 
 .a {
     font-weight: 700;
-    font-size: 5em;
+    font-size: 3.5em;
     margin: 0;
-    text-indent: 5px;
+    text-indent: .7em;
 }
+
 
 .b {
     font-weight: 700;
-    font-size: 3em;
+    font-size: 2.5em;
     text-indent: 1.2em;
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
 }
 
 footer {
-    border-top: 3px solid black;
-    font-size: small;
+    border-top: .3em solid black;
+    border-bottom: .3em solid black;
+    font-size: 1.2em;
     height: 3em;
     background-image: linear-gradient(45deg, black 0%, orange 25%, white 100%);
     clear: both;
@@ -159,18 +175,13 @@ footer {
 
 header img {
     float: left;
-    width: 120px;
+    width: 12em;
 }
 
 footer p {
     text-align: center;
 }
 
-main h1::first-letter {
-    /* Capitalizing the first letter of the Heading*/
-    font-size: 190%;
-    font-weight: bold
-}
 
 /* i couldnt get bolder to work using this format
    so i resorted to using style element inside of my <p> 
