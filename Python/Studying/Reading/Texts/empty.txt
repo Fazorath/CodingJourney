@@ -1,0 +1,1 @@
+Print first time writing into a file
