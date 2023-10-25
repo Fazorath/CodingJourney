@@ -1,5 +1,10 @@
-New line
-new line that is appened to the file
-new line that is appened to the file
-new line that is appened to the file
-new line that is appened to the file
+This is going to be my First Read line
+This is going to be my First Read line
+Its giving an error on the python side but still going through lol 10/24/13
+Another line
+Another line
+Another line
+Another line
+Another line
+final line
+I have to Double Slash the entire path for it to work lol.
