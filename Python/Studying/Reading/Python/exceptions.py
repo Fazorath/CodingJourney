@@ -37,15 +37,17 @@
 #     print(f"Sorry File name:{path}File not found")
 
 ## Analyzing Text
-path = 'CodingJourney/Python/Studying/Reading/Txts/alice.txt'
+def countwords(filename):
+    try:
+        with open(filename, encoding='utf-8') as f:
+            contents = f.read()      
+    except FileNotFoundError:
+        print("file Not found")
+    else:
+    # Count the approximate number of words in the file.
+        words = contents.split()
+        num_words = len(words)
+        print(f"The file {filename} has about {num_words} words.")
 
-try:
-  with open(path, encoding='utf-8') as f:
-    contents = f.read()
-except FileNotFoundError:
-  print("file Not found")
-else:
-  # Count the approximate number of words in the file.
-  words = contents.split()
-  num_words = len(words)
-  print(f"The file {path} has about {num_words} words.")
+path = 'CodingJourney/Python/Studying/Reading/Txts/alice.txt'
+countwords(path)
