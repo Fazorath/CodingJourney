@@ -2,7 +2,7 @@
 ## discussing the past Project but i aced that shit so ??
 
 ## Exception Handling
-path = "CodingJournPython\\Studying\\Lectures\\10-24-23\\example.txt"
+path = "CodingJourney\\Python\\Studying\\Lectures\\10-24-23\\example.txt"
 try: # code that you expect to fail or have some error
     print(9/0)
     with open(path) as f:
