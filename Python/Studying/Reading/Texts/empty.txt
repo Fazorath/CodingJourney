@@ -1,1 +1,2 @@
-Print first time writing into a file
+first time writing into a file
+Including a 2nd write statement without \n
