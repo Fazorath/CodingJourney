@@ -9,4 +9,4 @@ with open(path,'w') as f:
 ## read from the json file
 with open(path) as f:
   number = json.load(f)
-  print(number)
+  print(f"Your favorite number is: {number} !!")
