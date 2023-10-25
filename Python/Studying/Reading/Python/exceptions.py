@@ -49,5 +49,11 @@ def countwords(filename):
         num_words = len(words)
         print(f"The file {filename} has about {num_words} words.")
 
+
 path = 'CodingJourney/Python/Studying/Reading/Txts/alice.txt'
 countwords(path)
+
+## Multiple files in a list and uing a for loop to call the function
+bookfiles = ['helloworld.txt','dune.txt','airplane.txt']
+for file in bookfiles:
+    countwords(file)
