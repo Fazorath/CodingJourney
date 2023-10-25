@@ -163,9 +163,18 @@ main p {
     /* clearing */
 }
 
+/*Scalable Header*/
 header img {
     float: left;
-    width: 12em;
+    width: 15%;
+    height: auto;
+    min-width: 4em;
+}
+
+/*Scalable cat*/
+main img {
+    width: 20%;
+    height: auto;
 }
 
 footer p {
