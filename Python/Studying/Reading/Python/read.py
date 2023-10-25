@@ -7,7 +7,7 @@ with open(path) as f:
   
 ## Reading the file line by line
 with open(path) as f:
-    linecontent = f.readlines() # Displays the Forward slash n 
+    linecontent = f.readlines() # Displays the Forward slash n/ CREATES A LIST 
     print(linecontent)
 
 # To remove the Forward slash n
