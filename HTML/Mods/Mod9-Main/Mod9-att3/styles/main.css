@@ -19,6 +19,7 @@ body {
 
 header {
     border-bottom: 3px solid black;
+    padding-bottom: 15px;
     width: 100%;
     /* Header Linear Gradient Adjustment*/
     background-image: linear-gradient(45deg, white 0%, orange 75%, black 100%);
@@ -47,7 +48,7 @@ main {
 .nav_menu .dropdown ul li {
     /* Adjusted the width of the dropdown to match new text align rather than margin.*/
     text-align: center;
-    padding: 1.875% 0% 1.875% 0%;
+    padding: 5.875% 0% 5.875% 0%;
     width: 100%;
 }
 
@@ -163,8 +164,10 @@ footer {
 
 header img {
     float: left;
-    width: 120px;
-    padding-left: 15px;
+    padding-left: 1.875%;
+    width: 15%;
+    min-width: 5%;
+    height: auto;
 }
 
 footer p {
