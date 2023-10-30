@@ -1,5 +1,5 @@
 /* CHANGED AS MUCH AS POSSIBLE TO PERCENTANGE AND EM*/
-
+*{box-sizing: border-box;}
 html {
     background-image: url(bats.gif);
 }
@@ -93,9 +93,19 @@ main {
     display: block;
     clear: both;
 }
+section{ float: right; 
+        width: 80%;
+        padding-left: 15px;}
+
+
 aside {
     float: left;
-    margin-bottom: 45%;
+    width: 20%;
+}
+section::after{
+    content: "";
+    display: table;
+    clear: left;
 }
 
 aside nav ul {
@@ -106,16 +116,16 @@ aside nav ul {
 }
 
 aside nav ul li {
-    width: 130px;
+    width: 80%;
     margin-bottom: .5em;
     border: 2px solid black;
     background-color: orange;
-    margin: 25px; 
+    margin: 35px; 
 }
 
 aside nav ul li a {
     display: block;
-    padding: .5em 0 .5em .5em;
+    padding: .7em 0 .7em .7em;
     text-decoration: none;
     font-weight: bold;
     color: black;
@@ -197,6 +207,8 @@ a {
 	.slicknav_menu {
 		display:block;
 	}
+    aside,section{width: 100%;}
+    aside ul li a {text-align: center;}
 }
 
 @media (max-width: 479px) {
