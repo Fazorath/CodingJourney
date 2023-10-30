@@ -15,6 +15,7 @@ body {
     box-shadow: 10px 10px 30px black, -10px -10px 30px black;
     /* The Shadow*/
     background-color: white;
+    font-size: 100%;
 }
 
 header {
@@ -192,4 +193,12 @@ a {
     color: orange;
 
 }
+@media screen and (max-width: 800px) {
+    html {background-image: none;}
+    body {box-shadow: none;
+    font-size: 90%;}
+}
 
+@media screen and (max-width:667px) {
+    
+}
