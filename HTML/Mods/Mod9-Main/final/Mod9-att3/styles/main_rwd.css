@@ -18,7 +18,6 @@ body {
 
 header {
     border-bottom: 0.375% solid black;
-    padding-bottom: 1.875%;
     width: 100%;
     background-image: linear-gradient(45deg, white 0%, orange 75%, black 100%);
 }
@@ -95,7 +94,7 @@ main {
 }
 section{ float: right; 
         width: 80%;
-        padding-left: 15px;}
+        padding: 0 15px 0 15px;}
 
 
 aside {
@@ -139,15 +138,17 @@ aside ul li a:hover {
 .a {
     font-weight: 700;
     font-size: 250%;
-    margin: 0;
     text-indent: 5px;
+    margin: 0;
+    padding-bottom: 25px;
 }
 
 .b {
     font-weight: 700;
     font-size: 170%;
     text-indent: 12px;
-    margin-bottom: 1.875%;
+    padding-bottom: 1.875%;
+    margin: 0;
 }
 
 footer {
@@ -162,6 +163,7 @@ footer {
 header img {
     float: left;
     padding-left: 1.875%;
+    padding-bottom: 10px;
     width: 15%;
     min-width: 5%;
     height: auto;
@@ -207,6 +209,9 @@ a {
 	.slicknav_menu {
 		display:block;
 	}
+    header img{
+        padding-bottom: 40px;
+    }
     aside,section{width: 100%;}
     aside ul li a {text-align: center;}
 }
