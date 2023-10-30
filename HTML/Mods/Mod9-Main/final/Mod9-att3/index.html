@@ -21,30 +21,30 @@
         <h1 class="a">The Halloween Store</h1>
         <h2 class="b">For the little Goblin in all of us!</h2>
     </header>
-    
-    <nav class="nav_menu">
-        <ul>
-            <li class="current"><a href="index.html">Home</a></li>
-            <li><a href="index.html">Product List</a></li>
-            <li class="dropdown"><a href="index.html">Personal</a>
-                <!-- Adding another Dropdown to test how easy it was 
-            just by just adding a class and the items i wanted since my css was done-->
-                <ul>
-                    <li><a href="HelloWorld">Hello World</a></li>
-                    <li><a href="https://github.com/Fazorath">My Github</a></li>
-                </ul>
-            </li>
-            <li class="dropdown"><a href="index.html">Decorating Ideas</a>
-                <ul>
-                    <li><a href="Outdoor.html">Outdoor</a></li>
-                    <li><a href="Indoor.html">Indoor</a></li>
-                    <li><a href="Table.html">Table</a></li>
-                    <li><a href="Treats.html">Treats</a></li>
-                </ul>
-            </li>
-            <li><a href="#mailus">Join Email</a></li>
-        </ul>
-    </nav>
+    <div id="navwrapperattempt"></div>
+        <nav class="nav_menu">
+            <ul>
+                <li class="current"><a href="index.html">Home</a></li>
+                <li><a href="index.html">Product List</a></li>
+                <li class="dropdown"><a href="index.html">Personal</a>
+                    <!-- Adding another Dropdown to test how easy it was 
+                just by just adding a class and the items i wanted since my css was done-->
+                    <ul>
+                        <li><a href="HelloWorld">Hello World</a></li>
+                        <li><a href="https://github.com/Fazorath">My Github</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="index.html">Decorating Ideas</a>
+                    <ul>
+                        <li><a href="Outdoor.html">Outdoor</a></li>
+                        <li><a href="Indoor.html">Indoor</a></li>
+                        <li><a href="Table.html">Table</a></li>
+                        <li><a href="Treats.html">Treats</a></li>
+                    </ul>
+                </li>
+                <li><a href="#mailus">Join Email</a></li>
+            </ul>
+        </nav>
 
     <main>
         <section class="mainpart">
@@ -94,12 +94,14 @@
     </footer>
     <!-- SCRIPTS FOR JQUERY AND SLICKNAV -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <script src="styles/jquery.slicknav.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.nav_menu').slicknav();
-        });
-    </script>
+    <script src="styles/jquery.slicknav.js"></script>
+    <script type="text/javascript">
+    	$(document).ready(function(){
+			$('.nav_menu').slicknav({prependTo:"#navwrapperattempt"});
+    	});
+    	</script>
 </body>
 
 </html>
+
+

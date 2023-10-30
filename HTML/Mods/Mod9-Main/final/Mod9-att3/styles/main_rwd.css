@@ -147,7 +147,7 @@ aside ul li a:hover {
     font-weight: 700;
     font-size: 170%;
     text-indent: 12px;
-    padding-bottom: 1.875%;
+    padding-bottom: 25px;
     margin: 0;
 }
 
@@ -195,14 +195,14 @@ a {
 }
 
 /* MEDIA QUERIES */
-@media (max-width: 800px) {
+@media only screen and (max-width: 800px) {
     html {background-image: none;}
     body {box-shadow: none;
     font-size: 90%;}
 
 }
 
-@media (max-width:667px) {
+@media only screen and (max-width:667px) {
     .nav_menu {
 		display:none;
 	}
@@ -216,7 +216,7 @@ a {
     aside ul li a {text-align: center;}
 }
 
-@media (max-width: 479px) {
+@media only screen and (max-width: 479px) {
     header {
         font-size: 60%;
     }
