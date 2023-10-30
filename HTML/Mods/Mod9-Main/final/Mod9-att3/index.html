@@ -6,7 +6,11 @@
     <meta charset="utf-8">
     <title>Halloween Store</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="styles/main.css">
+    <!-- NEW STYLES -->
+    <link rel="stylesheet" href="styles/main_rwd.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <!-- JQUERY -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
 </head>
 
 
@@ -19,8 +23,6 @@
         <h1 class="a">The Halloween Store</h1>
         <h2 class="b">For the little Goblin in all of us!</h2>
     </header>
-
-
     <nav class="nav_menu">
         <ul>
             <li class="current"><a href="index.html">Home</a></li>
@@ -70,7 +72,8 @@
         </p>
 
         <h2>Product of the Week</h2>
-        <a href="products/cats.html"><img src="images/cat1.jpg" alt="Big Boy Cat of da week"></a>
+        <!-- ID ADDED FOR CATIMG -->
+        <a href="products/cats.html"><img class="catimg" src="images/cat1.jpg" alt="Big Boy Cat of da week"></a>
 
         <p style="font-weight: bolder;"><a href="products/cats.html">20' Deranged Cat</a></p>
 
@@ -90,7 +93,14 @@
     <footer>
         <p>&copy; 2022 Ben Murach</p>
     </footer>
-
+    <!-- SCRIPTS FOR JQUERY AND SLICKNAV -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="styles/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.nav_menu').slicknav();
+        });
+    </script>
 </body>
 
 </html>
