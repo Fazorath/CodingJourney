@@ -45,7 +45,7 @@ int menu()
 }
 
 // Function to figure out circle area
-float circlearea()
+void circlearea()
 {
     float radius;
     cout << endl
@@ -61,11 +61,10 @@ float circlearea()
     float area = 3.14159 * radius * radius; // The math
     cout << endl
          << "The area of the circle is " << area << endl;
-    return area;
 }
 
 // Function to figure out rectangle area
-float rectanglearea()
+void rectanglearea()
 {
     float length;
     float height;
@@ -90,11 +89,10 @@ float rectanglearea()
     cout << endl;
     cout << "L:" << length << "  H:" << height << endl; // My little QOL change to see your final inputs
     cout << "The area of the rectangle is " << area << endl;
-    return area;
 }
 
 // Function to figure out triangle area
-float trianglearea()
+void trianglearea()
 {
     float base;
     float height;
@@ -120,8 +118,7 @@ float trianglearea()
     cout << endl;
     cout << "B:" << base << "  H:" << height << endl;
     float area = (base * height) / 2;
-    cout << "The area of the Triangle is: " << area << endl;
-    return area;
+    cout << "The area of the Triangle is: " << area << endl;        
 }
 
 // Function to validate the user input
