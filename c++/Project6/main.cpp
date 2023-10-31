@@ -36,23 +36,40 @@ int menu (){
         return answer; /* code */
 }
 
-int uservalidate(int answer){
+float circlearea(){
+    float radius;
+    cout << "Enter the radius of the circle: ";
+    cin >> radius;
+    while (radius < 0)
+    {
+        cout << "Invalid input" << endl;
+        cout << "Enter the radius of the circle: ";
+        cin >> radius; // Ask for radius again
+    }
+    float area = 3.14159 * radius * radius; // No need to declare area again
+    cout <<endl << "The area of the circle is " << area << endl;
+    return area;
+}
+
+void uservalidate(int answer){
    if (answer == 1){
-       cout << endl << "You chose 1" << endl;
+       cout << endl << "You chose: 1" << endl;
+       circlearea();
    }
    else if (answer == 2){
-       cout << endl << "You chose 2" << endl;
+       cout << endl << "You chose: 2" << endl;
    }
    else if (answer == 3){
-       cout << endl << "You chose 3" << endl;
+       cout << endl << "You chose: 3" << endl;
    }
    else if (answer == 4){
-       cout << endl << "You chose 4" << endl;
+       cout << endl << "You chose: 4" << endl;
    }
    else {
        cout << endl << "Invalid input" << endl;
    }
 }
+
 
 int main(){
     int choice = menu();
