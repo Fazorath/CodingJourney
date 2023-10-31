@@ -46,19 +46,20 @@ float rectanglearea(){
     float height;
     cout << endl <<"Enter the length of the rectangle: ";
     cin >> length;
-    if (length < 0 )
+
+   
+    while (length < 0 )
     {
-        cout << "invalid Lenght"; 
-        cout << endl << "Input again: ";
+        cout << "invalid length. Input again: ";
         cin >> length;
     }  
     cout << endl <<"Enter the Height of the rectangle: ";
-    if (height < 0 )
+    cin >> height;
+    while (height < 0 )
     {
         cout << "invalid Height. Input again: ";
         cin >> height;
     }
-    cin >> height;
     float area = length * height;
     cout << endl;
     cout << endl;
