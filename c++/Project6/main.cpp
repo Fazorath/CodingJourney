@@ -30,16 +30,32 @@ int menu (){
         cout << "2. Calculate the area of a Rectangle" << endl;
         cout << "3. Calculate the area of a triangle" << endl;
         cout << "4. Quit" << endl;
-        cout << "Enter your choice (1-4): ";
+        cout << endl << "Enter your choice (1-4): ";
         cin >> answer;
         }
         return answer; /* code */
 }
 
-
-
+int uservalidate(int answer){
+   if (answer == 1){
+       cout << endl << "You chose 1" << endl;
+   }
+   else if (answer == 2){
+       cout << endl << "You chose 2" << endl;
+   }
+   else if (answer == 3){
+       cout << endl << "You chose 3" << endl;
+   }
+   else if (answer == 4){
+       cout << endl << "You chose 4" << endl;
+   }
+   else {
+       cout << endl << "Invalid input" << endl;
+   }
+}
 
 int main(){
-    cout << menu();
+    int choice = menu();
+    uservalidate(choice);
     return 0;
 }
