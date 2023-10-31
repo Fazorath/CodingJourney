@@ -1,12 +1,18 @@
 // Yoenis Hernandez
 // COP2000.0M2
-// 10/30/23
-// Last Updated: 10/30/23
+// Started - 10/24/23
+// Last Updated: 10/31/23
 // Write a program that displays the following menu:
 // Geometry Calculator
+// Split the project up into functions one for each shape and area i had to find.
+// Then i also created a menu function and a user validate function one to call the menu and one to check what the user had inputted
+// For my errors i am checking for them using while loops. I am checking for negative numbers and also for invalid input
+// Added some QOL improvements to my end console statements by letting you see a shrunk version of the choices you wrote.
+// Had alot of fun enjoying using functions and even went ahead and looked at how to summon them from other files meaning i can do this with only
+// my main function and just #include <filename> makes it look really nice.
+
 
 #include <iostream>
-#include <string>
 using namespace std;
 
 
