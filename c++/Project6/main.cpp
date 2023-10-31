@@ -51,13 +51,27 @@ float circlearea(){
     return area;
 }
 
+// Starting the function for the Area of a Rectangle 
+float rectanglearea(){
+    float lenght;
+    float height;
+    cout << endl <<"Enter the length of the rectangle: ";
+    cin >> lenght;
+    cout << endl <<"Enter the Height of the rectangle: ";
+    cin >> height;
+    float area = lenght * height;
+    return area
+}
+
+
 void uservalidate(int answer){
    if (answer == 1){
-       cout << endl << "You chose: 1" << endl;
+       cout << endl << "You chose: Area of a Circle using Radius" << endl;
        circlearea();
    }
    else if (answer == 2){
-       cout << endl << "You chose: 2" << endl;
+        cout << endl << "You chose: Area of a Rectangle using Lenght and Width" << endl;
+        rectanglearea();
    }
    else if (answer == 3){
        cout << endl << "You chose: 3" << endl;
@@ -69,7 +83,6 @@ void uservalidate(int answer){
        cout << endl << "Invalid input" << endl;
    }
 }
-
 
 int main(){
     int choice = menu();
