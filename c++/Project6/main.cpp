@@ -53,14 +53,29 @@ float circlearea(){
 
 // Starting the function for the Area of a Rectangle 
 float rectanglearea(){
-    float lenght;
+    float length;
     float height;
     cout << endl <<"Enter the length of the rectangle: ";
-    cin >> lenght;
+    cin >> length;
     cout << endl <<"Enter the Height of the rectangle: ";
     cin >> height;
-    float area = lenght * height;
-    return area
+    while (length < 0 || height < 0)
+    {
+        cout << "Invalid input" << endl;
+        if (length<0)
+        {
+            cout << "Enter the length of the rectangle: ";
+            cin >> length;
+        }
+        else if (height <0)
+        {
+            cout << "Enter the Height of the rectangle: ";
+        }
+    }
+    
+    float area = length * height;
+    cout << endl << "The area of the rectangle is " << area << endl;
+    return area;
 }
 
 
