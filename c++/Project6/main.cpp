@@ -29,8 +29,18 @@ int menu()
         cout << endl
              << "Enter your choice (1-4): ";
         cin >> answer;
+        if (answer != 4 && answer != 3 && answer != 2 && answer != 1) // If statement to check for invalid input
+        {
+            cout << endl
+                 << "Invalid Choice Try Again" 
+                 << endl
+                 << endl;
+        }
+        else
+        {
+            break;
+        }
     }
-
     return answer; /* code */
 }
 
