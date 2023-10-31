@@ -3,19 +3,8 @@
 // 10/30/23
 // Last Updated: 10/30/23
 // Write a program that displays the following menu:
+// Geometry Calculator
 
-//     Geometry Calculator
-
-//     1.  Calculate the area of a Circle
-//     2.  Calculate the area of a Rectangle
-//     3.  Calculate the area of a Triangle
-//     4.  Quit
-
-//      Enter your choice (1-4):
-
-//      If the user enters 1, the program should ask for the radius of the circle and then display its area.   Use 3.14159 for PI.  If the user enters 2, the program should ask for the length and width of the rectangle, and then display the rectangle's area.  If the user enters 3, the program should ask for the triangle's base and its height, and then display its area.   If the user enters 4, the program should end.
-
-//      Input Validation:  Decide how the program should handle illegal input for the menu choice or a negative value for any of the other inputs.
 #include <iostream>
 #include <string>
 using namespace std;
@@ -57,20 +46,24 @@ float rectanglearea(){
     float height;
     cout << endl <<"Enter the length of the rectangle: ";
     cin >> length;
-    cout << endl <<"Enter the Height of the rectangle: ";
-    cin >> height;
     if (length < 0 )
     {
-        cout << "invalid Lenght. Input again: ";
+        cout << "invalid Lenght"; 
+        cout << endl << "Input again: ";
         cin >> length;
     }  
+    cout << endl <<"Enter the Height of the rectangle: ";
     if (height < 0 )
     {
         cout << "invalid Height. Input again: ";
         cin >> height;
     }
+    cin >> height;
     float area = length * height;
-    cout << endl << "The area of the rectangle is " << area << endl;
+    cout << endl;
+    cout << endl;
+    cout << "L:" << length << "  H:" << height << endl;
+    cout << "The area of the rectangle is " << area << endl;
     return area;
 }
 
@@ -85,7 +78,7 @@ void uservalidate(int answer){
         rectanglearea();
    }
    else if (answer == 3){
-       cout << endl << "You chose: 3" << endl;
+       cout << endl << "You chose: Area of a Triangle using Base and Height" << endl;
    }
    else if (answer == 4){
        cout << endl << "You chose: 4" << endl;
