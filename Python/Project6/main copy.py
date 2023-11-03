@@ -22,6 +22,7 @@ def readcsvs(file1,column=0):
             code = columns[column].strip()
             codes.append(code)
         return codes
+    
 
 def readitems(list):  # displays the Codes that are being Read from CSV file
     for item in list:
