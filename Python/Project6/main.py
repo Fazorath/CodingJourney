@@ -3,25 +3,44 @@
 ## Oct 28, 2023
 ## Using CSV project 6
 
-def mastercode(file):
-    try:
-        with open(file,"r") as f:
-            content = f.readlines()
-    except:
-        print(f"{f} File not found")
-    else:
-        return content
+def readroster(file):
+   with open(file, "r") as f:
+       rostercodes = []
+       for line in f:
+           columns = line.split(",")
+           code = columns[5].strip()
+           print(f"*{code}*")
+       return rostercodes  
+
+
+def readmaster(file):
+    with open(file, "r") as f:
+         for line in f:
+             splitline = line.split(",")
+             return splitline
+
+
+
+def coderoster(file):
+    for line in file:
+        splitline = line.split(",")
+        splitline = splitline[5].strip()
+        return splitline
+
         
 
-
 def main():
-    # print intro message
     print("Processing Student input Files")
-    # read csv
-    path = "Python\Project6\Program Codes.csv"
-    file = mastercode(path)
-    print(len(file))
-    # get program code
+    path1 = "Python\\Project6\\Program Codes.csv"
+    path2 = "Python\\Project6\\student roster example.csv"
+    studentcodes = readroster(path2)
+    mastercodes = readmaster(path1)
+    for line in studentcodes:
+        if line in mastercodes:
+            print(f"Student Code {line} is valid")
+    
+
+    
     # format program codes
     # Print Program names
     # Write to file
