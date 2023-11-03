@@ -3,28 +3,33 @@
 ## Oct 28, 2023
 ## Using CSV project 6
 
-def readroster(file):
-   with open(file, "r") as f:
-       rostercodes = []
-       for line in f:
-           columns = line.split(",")
-           code = columns[5].strip()
-           rostercodes.append(code)
-       return rostercodes 
+from readroster import *
+from readcsv import *
+from readcsv2 import *
+from readitems import *
+from writecsv import *
+from incsv import *
 
-def readitems(list): 
-    list.pop(0)
-    for item in list:
-        print(f"*{item}*")
 
 def main():
   
-    print("Processing Student input Files...\n")
+    print("Processing Student input Files...")
     path1 = "Python\\Project6\\student roster example.csv"
     path2 = "Python\\Project6\\Program Codes.csv"
+    path3 = "Python\\Project6\\output.csv"
     classroster = readroster(path1)
+    # print(classroster)
+    mastercodes = readcsv(path2)
+    classname = readcsv2(path2)
     readitems(classroster)
-   
+    print("\n\n")
+    correctclasses = incsv(mastercodes, classroster, classname)
+    
+
+            
+        
+        
+            
     
 
     print("Program Completed!")
