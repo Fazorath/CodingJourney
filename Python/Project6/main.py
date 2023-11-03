@@ -22,17 +22,11 @@ def main():
     mastercodes = readcsv(path2)
     classname = readcsv2(path2)
     readitems(classroster)
-    print("\n\n")
-    correctclasses = incsv(mastercodes, classroster, classname)
-    
+    print("\n")
+    correctclass = incsv(mastercodes, classroster, classname)
 
-            
-        
-        
-            
-    
 
-    print("Program Completed!")
+    print("\nProgram Completed!")
 
 if __name__ == "__main__":
     main()
