@@ -10,23 +10,21 @@ def readroster(file):
            columns = line.split(",")
            code = columns[5].strip()
            rostercodes.append(code)
-       return rostercodes  
+       return rostercodes 
 
-def readroster_codes(list):
+def readitems(list): 
     list.pop(0)
     for item in list:
-        classcode = item.strip()
-        print(f"*{classcode}*")
-    return classcode
+        print(f"*{item}*")
 
 def main():
   
     print("Processing Student input Files...\n")
     path1 = "Python\\Project6\\student roster example.csv"
     path2 = "Python\\Project6\\Program Codes.csv"
-    readroster(path1)
     classroster = readroster(path1)
-    readroster_codes(classroster)
+    readitems(classroster)
+   
     
 
     print("Program Completed!")
