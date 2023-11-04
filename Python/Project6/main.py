@@ -45,7 +45,7 @@ def readitems(list):  # displays the Codes that are being Read from CSV file
 
 
 def incsv(master, roster, classes):   # if roster codes are in the master code files
-    print("Writing to file...")
+    print("\tWriting to file...")
     correctclasses = []
     for item in roster:  # item in roster
         if item in master:  # if that item is in the master list
