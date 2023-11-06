@@ -69,9 +69,9 @@ def main():
     print("Processing Student input Files...")
 
     # My file paths
-    path1 = "Python\\Project6\\student roster example.csv"
-    path2 = "Python\\Project6\\Program Codes.csv"
-    path3 = "Python\\Project6\\output.csv"
+    path1 = "CodingJourney/Python/Project6/student roster example.csv"
+    path2 = "CodingJourney/Python/Project6/Program Codes.csv"
+    path3 = "CodingJourney/Python/Project6/output.csv"
 
     # Class Codes
     classroster = readroster(path1)
