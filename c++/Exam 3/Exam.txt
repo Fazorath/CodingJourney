@@ -1,0 +1,37 @@
+! - #ifndef -
+    This derictive is the one that is used 
+    for the program to be conditionally compiled
+
+! - Destructor Function- 
+    Have no Return Type
+    Automatically called when an object is destroyed
+
+! - Default Constructor - 
+    When a constructor function accepts no arguments,
+    or does not have to accept because of
+    Default arguments already
+
+! - Global Variable - 
+    Can be called from anywhere
+    Declared at the top or the start program
+    outside of all blocks and functions
+    Can have the same name as a variable localy Declared
+    local takes priority over the Global
+
+! - Function - 
+    Is executed when called
+    function Values do not changed when
+    called Elsewhere
+    Return Causes a function to end
+    Only 1 return value
+
+! - Constructor Function - 
+    Automatically created when a class object
+    is created
+
+! - Private access Specifier - 
+    Used to protect Private Info
+
+! - Class - 
+    A data type determined by the programmer
+    Only 1 Default Constructor
