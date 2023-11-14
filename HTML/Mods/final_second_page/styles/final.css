@@ -33,16 +33,18 @@ main {
 }
 
 header { /* Header Settings*/
-  text-align: center;
-  margin: auto;
-  max-width: 40%;
-  padding-right: 140px;
-}
-
+    text-align: center;
+    margin: auto;
+    max-width: 40%;
+    padding-right: 140px;
+  }
 header img { /* Image Changes*/
-  float:left;
-  width: 150px;
-}
+    float: left;
+    width: 120px;
+    position: relative;
+    left: 126px;
+    top: -4px;
+  }
 .column a {
     text-decoration: none;
     color: black;

@@ -1,11 +1,53 @@
 html {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(210, 202, 202);
     font-family: 'Playfair Display', Times, serif;
     font-size: larger;
 }
-main{
-    width: 1000px;
+body {
+    padding: 0;
+    width: 1300px;
+    margin: 0 auto;
 }
+
+section{
+    width: 77%;
+    float: left;
+    border-bottom: 4px solid black;
+    border-left: 4px solid black;
+    border-right: 4px solid black;
+}
+section h2{
+    text-align: center;
+}
+section p{
+    text-align: center;
+}
+section div{
+    padding: 15px;
+    margin-right: 5px;
+    
+}
+aside{
+    width: 20%;
+    float: right;
+    /* border: 2px solid black; */
+    padding-left: 27px;
+    border-right: 4px solid black;
+    border-bottom: 4px solid black;
+    height: 982px;
+}
+aside p{
+    font-size: x-large;
+    font-weight: bolder;
+    color: gray;
+}
+aside dt{
+    text-decoration: underline;
+}
+aside dd{
+    padding: 5px;
+}
+
 header { /* Header Settings*/
     text-align: center;
     margin: auto;
@@ -13,8 +55,11 @@ header { /* Header Settings*/
     padding-right: 140px;
   }
 header img { /* Image Changes*/
-    float:left;
+    float: left;
     width: 120px;
+    position: relative;
+    left: 126px;
+    top: -4px;
   }
 footer {
     text-align: center;
@@ -50,3 +95,10 @@ ul {
 .active {
     color: rgb(253, 9, 9);
 }
+
+.mySlides {
+    border: 4px solid black;
+}
+audio {width: 90%;}
+.button-left {margin-top: 15px;}
+.button-right {margin-top: 15px}
