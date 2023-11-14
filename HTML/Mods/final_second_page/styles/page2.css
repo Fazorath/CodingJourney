@@ -7,14 +7,16 @@ body {
     padding: 0;
     width: 1300px;
     margin: 0 auto;
+    border-bottom: 4px solid black;
+    border-left: 4px solid black;
+    border-right: 4px solid black;
+    border-top: 4px solid black;
 }
 
 section{
     width: 77%;
     float: left;
-    border-bottom: 4px solid black;
-    border-left: 4px solid black;
-    border-right: 4px solid black;
+    
 }
 section h2{
     text-align: center;
@@ -32,14 +34,14 @@ aside{
     float: right;
     /* border: 2px solid black; */
     padding-left: 27px;
-    border-right: 4px solid black;
-    border-bottom: 4px solid black;
+    /* border-right: 4px solid black;
+    border-bottom: 4px solid black; */
     height: 982px;
 }
 aside p{
     font-size: x-large;
     font-weight: bolder;
-    color: gray;
+    color: black;
 }
 aside dt{
     text-decoration: underline;
@@ -102,3 +104,8 @@ ul {
 audio {width: 90%;}
 .button-left {margin-top: 15px;}
 .button-right {margin-top: 15px}
+
+footer {
+    border-top: 2px solid gray;
+    font-size: 12px;
+}

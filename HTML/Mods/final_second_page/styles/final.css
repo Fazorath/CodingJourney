@@ -8,7 +8,8 @@ main {
     border-style: solid;
     border-width: medium;
     border-radius: 25px;
-    padding: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
     padding-bottom: 0px;
     margin: 25px auto;
     width: 900px;
@@ -61,7 +62,7 @@ header img { /* Image Changes*/
 }
 .footer {
     text-align: center;
-    font-size: 80%;
+    font-size: 12px;
     border-top: 2px solid grey;
 }
 p {
