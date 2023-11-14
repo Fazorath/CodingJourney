@@ -3,49 +3,58 @@ html {
     font-family: 'Playfair Display', Times, serif;
     font-size: larger;
 }
+
 main {
-    
+
     border-style: solid;
     border-width: medium;
     border-radius: 25px;
-    padding-left: 25px;
-    padding-right: 25px;
     padding-bottom: 0px;
     margin: 25px auto;
     width: 900px;
     font-size: medium;
 }
-.purpose { /* Purpose block and its settings*/
-  text-align: center;
+
+.purpose {
+    /* Purpose block and its settings*/
+    text-align: center;
 }
+
 .column h2 {
     text-decoration: underline;
 }
-.column { /* Columns in the middle and their settings*/
-  float: left;
-  width: 33.33%;
-  text-align: center;
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-  
+
+.column {
+    /* Columns in the middle and their settings*/
+    float: left;
+    width: 33.33%;
+    text-align: center;
 }
 
-header { /* Header Settings*/
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+
+}
+
+header {
+    /* Header Settings*/
     text-align: center;
     margin: auto;
     max-width: 40%;
     padding-right: 140px;
-  }
-header img { /* Image Changes*/
+}
+
+header img {
+    /* Image Changes*/
     float: left;
     width: 120px;
     position: relative;
     left: 126px;
     top: -4px;
-  }
+}
+
 .column a {
     text-decoration: none;
     color: black;
@@ -54,24 +63,28 @@ header img { /* Image Changes*/
 .detailedlook {
     border-top: 2px solid black;
 }
+
 .detailedlook a {
-  text-decoration: none;
-  font-size: x-large;
-  /* Getting rid of the blue lin
+    text-decoration: none;
+    font-size: x-large;
+    /* Getting rid of the blue lin
   and making the font a size bigger*/
 }
+
 .footer {
     text-align: center;
     font-size: 12px;
-    border-top: 2px solid grey;
 }
+
 p {
-    font-size: 22px; /* Setting Font size for Paragraph element*/
+    font-size: 22px;
+    /* Setting Font size for Paragraph element*/
 }
 
 
 li {
-    margin: 10px 0; /* Spacing between List Items*/
+    margin: 10px 0;
+    /* Spacing between List Items*/
 }
 
 li::hover {
@@ -84,26 +97,34 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    border-radius: 21px;
     display: flex;
     justify-content: center;
-  }
-  
-  li {
+}
+.detailedlook p {
+    padding-left: 15px;
+}
+.detailedlook h2 {
+    padding-left: 15px;
+}
+
+li {
     float: left;
-  }
-  
-  li a {
+}
+
+li a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     width: 200px;
     text-decoration: none;
-  }
-  
-  li a:hover {
+}
+
+li a:hover {
     background-color: #111;
-  }
+}
+
 .active {
     color: rgb(253, 9, 9);
 }
