@@ -26,7 +26,7 @@ class Dice {
 };
 
 int main(){
-  class Dice d1;
-  d1.roll();
+    Dice d1;
+    d1.roll();
     d1.display();
 }
