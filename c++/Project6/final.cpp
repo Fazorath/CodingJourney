@@ -41,7 +41,7 @@ public:
 
 		for (int i = 0; i < numberofrolls; ++i) // For loop to roll the dice
 		{
-			number = rand() % 6 + 1;// Random roll
+			number = rand() % 6 + 1;// Random roll had to add one because the remainder would do 0-5 instead.
 			
 			if(number == 1){ // if statements to count how many times each dice is rolled
 				number1 += 1;
