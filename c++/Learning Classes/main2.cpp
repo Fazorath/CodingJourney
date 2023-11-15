@@ -1,17 +1,18 @@
 #include <iostream>
 using namespace std;
 
-class HelloWorld {
+const int sides = 6;
+
+
+class Dice {
+    private:
+        int dice[sides];
+        int runs;
     public:
-        void sayHello() {
-            cout << "First time using a class" << endl;
-        }
-        void sayGoodbye() {
-            cout << "Goodbye!" << endl;
-        }
-        void saySomething(string s) {
-            cout << s << endl;
-        }
+        void roll();
+        
+
+        void display();
 };
 
 int main(){
