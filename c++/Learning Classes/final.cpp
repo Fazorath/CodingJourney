@@ -12,9 +12,10 @@
 // Display function displays the results
 
 #include <iostream>
-#include <cstdlib>
-#include <ctime>
-using namespace std;
+#include <cstdlib> // Needed for rand and srand
+#include <ctime> // Needed for the time function
+
+using namespace std; // I hate putting std:: in front of everything
 
 const int sides = 6; // Number of sides on the die
 
@@ -49,8 +50,7 @@ public:
 				number2 += 1;
 			}
 			else if(number == 3){
-				number3 += 1;
-			}
+				number3 += 1;}
 			else if(number == 4){
 				number4 += 1;
 			}
