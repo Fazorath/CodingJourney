@@ -18,15 +18,16 @@ class Circle {
     public:
         void setRadius(double r);
         double calcArea();
+    
+    void Circle::setRadius(double r) {
+        radius = r;
+    }
+
+    double Circle::calcArea() {
+        return 3.14159 * pow(radius,2);
+    }
 };
 
-void Circle::setRadius(double r) {
-    radius = r;
-}
-
-double Circle::calcArea() {
-    return 3.14159 * pow(radius,2);
-}
 
 int main() {
     Circle c; // Creating instance of circle
