@@ -5,14 +5,15 @@
 // Creates a class called dice with private variables and some public functions
 // The variables specify the amount of times to roll the dice and also the counters for how many times each number is rolled
 // Public includes the roll function and the display function
-// Roll function using the <random> header creates a random number to use as a seed
+// Roll function using the <cstdlib> and <ctime> header creates a random number to use as a seed
 // which is used to generate a random number in a range from 1 - 6
 // Using a for loop to roll the dice the amount of times specified in the private variable
 // We keep track of the amount of times each die is rolled using the variables specified in private
 // Display function displays the results
 
 #include <iostream>
-#include <random>
+#include <cstdlib>
+#include <ctime>
 using namespace std;
 
 const int sides = 6; // Number of sides on the die
@@ -31,30 +32,32 @@ private:
 public:
 	void roll() // Function to roll the Dice
 	{
-		random_device rd; // A random number generator not sure if this is the one to use sorry.
-		mt19937 gen(rd()); // From my understanding this is the generator which is fed the numbers from the random_device rd
-		uniform_int_distribution<int> distribution(1, sides); // Creates the random integers in a range which is specified with the distrubution
+        unsigned seed; //Data type that srand expects is unsigned
+        int number; // Variable to hold the random number
+        seed = time(0); //Secconds since midnight 1970 lol
+        srand(seed); // Seed the random number generator
+        
 
 		for (int i = 0; i < numberofrolls; ++i) // For loop to roll the dice
 		{
-			int roll = distribution(gen); // Random roll
+			number = rand() % 6 + 1;// Random roll
 			
-			if(roll == 1){ // if statements to count how many times each dice is rolled
+			if(number == 1){ // if statements to count how many times each dice is rolled
 				number1 += 1;
 			}
-			else if(roll == 2){
+			else if(number == 2){
 				number2 += 1;
 			}
-			else if(roll == 3){
+			else if(number == 3){
 				number3 += 1;
 			}
-			else if(roll == 4){
+			else if(number == 4){
 				number4 += 1;
 			}
-			else if(roll == 5){
+			else if(number == 5){
 				number5 += 1;
 			}
-			else if(roll == 6){
+			else if(number == 6){
 				number6 += 1;
 			}	
 			else
