@@ -9,8 +9,9 @@
 
 
 
-int main() {
-    std::cout << "Hello World!\n";
+#include <iostream>
+#include <cmath>
+
 class Circle {
     private:
         double radius;
@@ -26,4 +27,10 @@ void Circle::setRadius(double r) {
 double Circle::calcArea() {
     return 3.14159 * pow(radius,2);
 }
+
+int main() {
+    Circle c; // Creating instance of circle
+    c.setRadius(65.9); // Setting radius of circle 
+    std::cout << "The area of the circle is: " << c.calcArea() << "\n"; // Printing area of circle
+    return 0;
 }
