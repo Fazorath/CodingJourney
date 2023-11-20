@@ -39,18 +39,28 @@ class CSVtoJSON:
             self.read_filename = file_read
             # print(file_read)
   
-  
+
     def assign_header(self):
         self.header = self.read_filename[0].strip().split(",")  
-        
+
+
     def pair_header(self):
         for line in self.read_filename[1:]:
-            info = line.split(",")
+            lines = line.split(",")
+            # print(lines)
             row = {}
             
-            for i in range(len(info)):
-                row[self.header[i]] = info[i]
-            self.data.append(row)
+            for i in range(len(self.header)):
+                row[self.header[i]] = lines[i]
+            print(row)
+            
+
+        
+   
+       
+
+
+
 if __name__ == "__main__":
     ## Creates instance of class
     project7 = CSVtoJSON()
@@ -64,4 +74,5 @@ if __name__ == "__main__":
     # print(project7.header)
     
     project7.pair_header()
-    print(project7.data)
+    # print(project7.data)
+

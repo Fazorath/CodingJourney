@@ -4,6 +4,13 @@
 ## for each row of data that is not the header row.  JavaScript is a scripting language used for web pages.  
 ## JSON is a common format used to transmit data for web apps from a web server to a client 
 ## (i.e. such as from sfcollege.edu's web server to your computer) so it can be displayed in a browser.
+## Create a class and FN
+## Read a CSV
+## Keep CSV header
+## Paid header with the values
+## Ceate Json String
+## Return JSON string to Screen
+## return JSON string to file
 import json
 
 def opencsv():
@@ -12,8 +19,13 @@ def opencsv():
     with open(filename, 'r') as file:
         filelines = file.readlines()
         headers = filelines[0].strip().split(',')
-        storage = []
-        print(headers[3])
+        print(headers)
+        JsonData = []
+        for line in filelines[1:]:
+            values = line.strip().split(',')
+            row = dict(zip(headers, values))
+            JsonData.append(row)
+        print(JsonData)
             
 
 def splitcsv(content):
