@@ -23,7 +23,6 @@ class CSVtoJSON:
         ## Holds the data rows of the csv file
         self.read_filename = []
     
-    
     def read_txt_file(self):
         try: ## Exception handling
             with open(self.filename, "r") as f:
@@ -34,12 +33,20 @@ class CSVtoJSON:
             self.read_filename = file_read
             print(file_read)
 
+
             
 
     
 
        ## Create JSON strings
+
+    def assign_header(self):
+        self.header = self.read_filename[0]
 if __name__ == "__main__":
+    ## Creates instance of class
     project7 = CSVtoJSON()
+    ## Reads the Txt File
     project7.read_txt_file()
-    print(project7.read_filename)
+    ## Assigns the header of the txt file
+    project7.assign_header()
+    print(project7.header)
