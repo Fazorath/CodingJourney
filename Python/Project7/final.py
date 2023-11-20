@@ -8,7 +8,7 @@
 ## Read a txt
 ## Keep CSV header
 ## Pair header with the values
-## Ceate Json String
+## Create Json String
 ## Return JSON string to Screen
 ## return JSON string to file
 
@@ -44,7 +44,7 @@ class CSVtoJSON:
         self.header = self.read_filename[0].strip().split(",")  
 
 
-    def pair_header(self):
+    def pair_header_values(self):
         for line in self.read_filename[1:]:
             lines = line.split(",")
             # print(lines)
@@ -52,7 +52,8 @@ class CSVtoJSON:
             
             for i in range(len(self.header)):
                 row[self.header[i]] = lines[i]
-            print(row)
+            self.data.append(row)
+            
             
 
         
@@ -72,7 +73,7 @@ if __name__ == "__main__":
     ## Assigns the header of the txt file
     project7.assign_header()
     # print(project7.header)
-    
-    project7.pair_header()
-    # print(project7.data)
+
+    project7.pair_header_values()
+    print(project7.data)
 
