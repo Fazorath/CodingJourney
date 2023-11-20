@@ -15,13 +15,31 @@
 class CSVtoJSON:
     def __init__(self):
         ## Source File Path
-        self.inputFile = input("Enter the CSV file Name: ")
+        self.filename = input("Enter the CSV file Name: ")
         ## Output File Path
-        self.outputFile = input("Enter the JSON file Name: ")
+        self.output_fileName = input("Enter the JSON file Name: ")
         ## Holds the Header row of the csv file
         self.header = []
+        ## Holds the data rows of the csv file
+        self.read_filename = []
+    
+    
+    def read_txt_file(self):
+        try: ## Exception handling
+            with open(self.filename, "r") as f:
+                file_read = f.readlines() ## Read and create list
+        except:
+            print(f"{self.filename} not found")
+        else:
+            self.read_filename = file_read
+            print(file_read)
 
-if __name__ == "__main__":
-    project7 = CSVtoJSON()
+            
+
     
 
+       ## Create JSON strings
+if __name__ == "__main__":
+    project7 = CSVtoJSON()
+    project7.read_txt_file()
+    print(project7.read_filename)
