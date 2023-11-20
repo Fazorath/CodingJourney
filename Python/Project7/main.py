@@ -7,24 +7,26 @@
 import json
 
 def opencsv():
-    filename=input("Enter the file Name: ")
+    filename="/Users/exempt/Repo Codespace/CodingJourney/Python/Project7/Project7TestFile.csv"
+    # input("Enter the file Name: ")
     with open(filename, 'r') as file:
-        for line in file:
-            content = file.readlines()
-            print(content)
-            print("\n\n")
-        return content
+        filelines = file.readlines()
+        headers = filelines[0].strip().split(',')
+        storage = []
+        print(headers[3])
+            
 
-def createJSON(content):
-    jsonname = input("Enter the file Name: ")
-    with open(jsonname, 'w') as file:
-        json.dump(content, file)
-
+def splitcsv(content):
+    for item in content:
+        data = item.split(',')
+        print('\n')
+        print(data)
+    return data
 
 
 def main():
     content = opencsv()
-    createJSON(content)
+    
 
 if __name__ == "__main__":
     main()

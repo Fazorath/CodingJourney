@@ -1,1 +1,20 @@
-["James,Nichols,1234,True\n", "Adam,Person,8903,False\n", "Eve,Person,9029,True"]
+[
+{
+  "First Name": "James",
+  "Last Name": "Nichols",
+  "ID": "1234",
+  "Registered": "True",
+},
+{
+  "First Name": "Adam",
+  "Last Name": "Person",
+  "ID": "8903",
+  "Registered": "False",
+},
+{
+  "First Name": "Eve",
+  "Last Name": "Person",
+  "ID": "9029",
+  "Registered": "True",
+}
+]
