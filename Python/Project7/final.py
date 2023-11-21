@@ -25,68 +25,74 @@ class CSVtoJSON:
         ## Holds the JSON string
         self.data = []
 
+
     def read_txt_file(self):
       
         try: ## Exception handling
             with open(self.filename, "r") as f:
                 file_read = []
                 for line in f.readlines():
-                    file_read.append(line.strip())
+                    file_read.append(line.strip()) ## Reading the contents of the text file but stripped
         except:
             print(f"{self.filename} not found")
        
         else:
-            self.read_filename = file_read
-            # print(file_read)
+            self.read_filename = file_read ## Assigning the contents of the text file to the read_filename variable
+            # print(file_read) ## Checks
   
-    def assign_header(self):
-        self.header = self.read_filename[0].strip().split(",")  
 
-    def pair_header_values(self):
-        for line in self.read_filename[1:]:
+    def assign_header(self): ## Assigns the header of the txt file
+        self.header = self.read_filename[0].strip().split(",")  ## Strips the header of the txt file and splits it by the comma
+
+
+    def pair_header_values(self): ## Pairs the header with the values of the txt file
+        for line in self.read_filename[1:]: ## splits the contents of the txt file by the comma
             lines = line.split(",")
             # print(lines[3])
-            row = {}
+            row = {} ## Creates a dictionary
             for i in range(len(self.header)):
-                row[self.header[i]] = lines[i]
-            self.data.append(row)
-        # print(self.data)
-            
-    def create_json_string(self):
-        counter = 1
-        json = "{"
-        for item in self.data:
-            json += f'"{counter}":{{'
-            for i in range(len(self.header)):
+                row[self.header[i]] = lines[i] ## Assigns the header to the row
+            self.data.append(row) ## Appends the row to the data variable previously created
+        # print(self.data) ## Checks the data variable
+
+
+    def create_json_string(self): ## Creates the JSON strings
+        counter = 1 ## Counter for the JSON string
+        ## Manually creating the json strings for each row
+        json = "{" 
+        for item in self.data: ## Loops through the data variable
+            json += f'"{counter}":{{' ## Adds the counter to the json string
+            for i in range(len(self.header)): ## Loops through the header variable
                 key = self.header[i]
                 value = item[key]
-                if i == 2:
+                if i == 2: ## this will get rid of the Quoatiations on the 2nd ID column
                     json += f'"{key}":{value}'
-                elif i == 3:
-                    # Convert to lowercase for the fourth column
+                elif i == 3: ## This will get rid of the quotations on the 3rd column and transforms to lowercase
                     json += f'"{key}":{value.lower()}'
                 else:
-                    json += f'"{key}":"{value}"'
-                if i < len(self.header) - 1:
-                    json += ","
-            json += "}"
-            if counter < len(self.data):
+                    json += f'"{key}":"{value}"' ## Adds the key and value to the json string
+                if i < len(self.header) - 1: ## Adds a comma to the json string
+                    json += "," 
+            json += "}" ## Adds the closing curly brace
+            if counter < len(self.data): 
                 json += ","
-            counter += 1
-        json += "}"
-        return json
-        
+            counter += 1 ## Increments the counter
+        json += "}" ## Adds the closing curly brace to the json string
+        return json ## Returns the json string
+ 
+
     def returnJsonString(self):
-        print(self.create_json_string())
-    
-    def write_json_file(self):
-        try:
+        print(self.create_json_string()) ## Prints to the JSON to Console
+     
+
+    def write_json_file(self): ## Writes the JSON string to a file
+        try: ## Exception handling
             with open(self.output_fileName, "w") as f:
-              f.write(self.create_json_string())
+              f.write(self.create_json_string()) ## Writes the JSON string to the file using the returned function
         except:
-            print(f"{self.output_fileName} not found")
+            print(f"{self.output_fileName} not found") ## If the file is not found
         else:
-            print(f"Output written to {self.output_fileName}")
+            print(f"Output Written to {self.output_fileName}") ## Confirm the completion of writing the file
 
        
 
@@ -98,19 +104,25 @@ if __name__ == "__main__":
     
     ## Reads the Txt File
     project7.read_txt_file()
-    # print(project7.read_filename)
+    # print(project7.read_filename) ## Checks to see if the file was read
    
     ## Assigns the header of the txt file
     project7.assign_header()
-    # print(project7.header)
+    # print(project7.header) ## Checks to see if the header was assigned
 
+    ## Pairs the header with the values of the txt file
     project7.pair_header_values()
-    # print(project7.data)
-
+    # print(project7.data) ## Checks to see if the data was written to the data variable
+ 
+    ## Creates the JSON strings
     project7.create_json_string()
     # print(project7.create_json_string())
 
+    ## Returns the JSON string to the screen
     project7.returnJsonString()
+    ## THis will return to the console the JSON string
 
+    ## Returns the JSON string to the file
     project7.write_json_file()
+    ## This will write the JSON string to a file
 
