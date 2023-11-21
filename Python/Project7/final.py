@@ -43,7 +43,7 @@ class CSVtoJSON:
 
     def assign_header(self): ## Assigns the header of the txt file
         self.header = self.read_filename[0].strip().split(",")  ## Strips the header of the txt file and splits it by the comma
-
+        # print(self.read_filename[2]) ##checking to see if this could work to pair values together
 
     def pair_header_values(self): ## Pairs the header with the values of the txt file
         for line in self.read_filename[1:]: ## splits the contents of the txt file by the comma
