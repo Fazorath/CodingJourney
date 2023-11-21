@@ -54,27 +54,27 @@ class CSVtoJSON:
             
     def create_json_string(self):
         counter = 1
-        json_str = "{"
+        json = "{"
         for item in self.data:
-            json_str += f'"{counter}":{{'
+            json += f'"{counter}":{{'
             for i in range(len(self.header)):
                 key = self.header[i]
                 value = item[key]
                 if i == 2:
-                    json_str += f'"{key}":{value}'
+                    json += f'"{key}":{value}'
                 elif i == 3:
                     # Convert to lowercase for the fourth column
-                    json_str += f'"{key}":{value.lower()}'
+                    json += f'"{key}":{value.lower()}'
                 else:
-                    json_str += f'"{key}":"{value}"'
+                    json += f'"{key}":"{value}"'
                 if i < len(self.header) - 1:
-                    json_str += ","
-            json_str += "}"
+                    json += ","
+            json += "}"
             if counter < len(self.data):
-                json_str += ","
+                json += ","
             counter += 1
-        json_str += "}"
-        return json_str
+        json += "}"
+        return json
         
     def returnJsonString(self):
         print(self.create_json_string())
