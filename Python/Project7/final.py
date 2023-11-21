@@ -60,7 +60,9 @@ class CSVtoJSON:
             for i in range(len(self.header)):
                 key = self.header[i]
                 value = item[key]
-                if i == 2 and 3:
+                if i == 2:
+                    json_str += f'"{key}":{value}'
+                elif i == 3:
                     # Convert to lowercase for the fourth column
                     json_str += f'"{key}":{value.lower()}'
                 else:
