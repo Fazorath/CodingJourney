@@ -29,8 +29,9 @@ class CSVtoJSON:
       
         try: ## Exception handling
             with open(self.filename, "r") as f:
-                file_read = [line.strip() for line in f.readlines()] ## Read and create list
-      
+                file_read = []
+                for line in f.readlines():
+                    file_read.append(line.strip())
         except:
             print(f"{self.filename} not found")
        
@@ -72,14 +73,19 @@ class CSVtoJSON:
             counter += 1
         json_str += "}"
         return json_str
-
-    
         
     def returnJsonString(self):
         print(self.create_json_string())
     
-        
-   
+    def write_json_file(self):
+        try:
+            with open(self.output_fileName, "w") as f:
+              f.write(self.create_json_string())
+        except:
+            print(f"{self.output_fileName} not found")
+        else:
+            print(f"Output written to {self.output_fileName}")
+
        
 
 
@@ -103,4 +109,6 @@ if __name__ == "__main__":
     # print(project7.create_json_string())
 
     project7.returnJsonString()
+
+    project7.write_json_file()
 
