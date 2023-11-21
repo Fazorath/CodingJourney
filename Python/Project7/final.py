@@ -25,12 +25,11 @@ class CSVtoJSON:
         ## Holds the JSON string
         self.data = []
 
-
     def read_txt_file(self):
       
         try: ## Exception handling
             with open(self.filename, "r") as f:
-                file_read = f.readlines() ## Read and create list
+                file_read = [line.strip() for line in f.readlines()] ## Read and create list
       
         except:
             print(f"{self.filename} not found")
@@ -39,15 +38,13 @@ class CSVtoJSON:
             self.read_filename = file_read
             # print(file_read)
   
-
     def assign_header(self):
         self.header = self.read_filename[0].strip().split(",")  
-
 
     def pair_header_values(self):
         for line in self.read_filename[1:]:
             lines = line.split(",")
-            # print(lines)
+            # print(lines[3])
             row = {}
             for i in range(len(self.header)):
                 row[self.header[i]] = lines[i]
@@ -55,17 +52,32 @@ class CSVtoJSON:
         # print(self.data)
             
     def create_json_string(self):
-        ## i dont know if we have to manually make our own json string 
-        
-        json = "["
         counter = 1
-        for row in self.data:
-            json += "{"
-            for key, value in row.items():
-                json += f'"{key}":"{value}",'
-            json = json[:-1] + "},"
-        # print(json)
+        json_str = "{"
+        for item in self.data:
+            json_str += f'"{counter}":{{'
+            for i in range(len(self.header)):
+                key = self.header[i]
+                value = item[key]
+                if i == 2 and 3:
+                    # Convert to lowercase for the fourth column
+                    json_str += f'"{key}":{value.lower()}'
+                else:
+                    json_str += f'"{key}":"{value}"'
+                if i < len(self.header) - 1:
+                    json_str += ","
+            json_str += "}"
+            if counter < len(self.data):
+                json_str += ","
+            counter += 1
+        json_str += "}"
+        return json_str
+
+    
         
+    def returnJsonString(self):
+        print(self.create_json_string())
+    
         
    
        
@@ -88,4 +100,7 @@ if __name__ == "__main__":
     # print(project7.data)
 
     project7.create_json_string()
+    # print(project7.create_json_string())
+
+    project7.returnJsonString()
 
