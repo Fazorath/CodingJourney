@@ -90,9 +90,9 @@ class CSVtoJSON:
             with open(self.output_fileName, "w") as f:
               f.write(self.create_json_string()) ## Writes the JSON string to the file using the returned function
         except:
-            print(f"{self.output_fileName} not found") ## If the file is not found
+            print(f"\n{self.output_fileName} not found") ## If the file is not found
         else:
-            print(f"Output Written to {self.output_fileName}") ## Confirm the completion of writing the file
+            print(f"\nOutput Written to {self.output_fileName}") ## Confirm the completion of writing the file
 
        
 
@@ -102,7 +102,7 @@ if __name__ == "__main__":
     ## Creates instance of class
     project7 = CSVtoJSON()
     
-    ## Reads the Txt File
+    ## Reads the Txt Filet
     project7.read_txt_file()
     # print(project7.read_filename) ## Checks to see if the file was read
    
