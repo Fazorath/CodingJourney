@@ -49,13 +49,23 @@ class CSVtoJSON:
             lines = line.split(",")
             # print(lines)
             row = {}
-            
             for i in range(len(self.header)):
                 row[self.header[i]] = lines[i]
             self.data.append(row)
+        # print(self.data)
             
-            
-
+    def create_json_string(self):
+        ## i dont know if we have to manually make our own json string 
+        
+        json = "["
+        counter = 1
+        for row in self.data:
+            json += "{"
+            for key, value in row.items():
+                json += f'"{key}":"{value}",'
+            json = json[:-1] + "},"
+        # print(json)
+        
         
    
        
@@ -75,5 +85,7 @@ if __name__ == "__main__":
     # print(project7.header)
 
     project7.pair_header_values()
-    print(project7.data)
+    # print(project7.data)
+
+    project7.create_json_string()
 
