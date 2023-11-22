@@ -30,10 +30,8 @@ class TemperatureReader
 private:
     static const int ISIZE = 30; // size of array
     int temps[ISIZE];           // array to hold temps
-    int aboveAverage = 0;      // counters  
-    int belowAverage = 0;
-    int equalAverage = 0;
-    double sum = 0; // sum of all temps
+    int counters[3] = {0};      // counters array: 0 - belowAverage, 1 - equalAverage, 2 - aboveAverage
+    int sum = 0; // sum of all temps
 
 public:
     void tempread() // function to read file into array
@@ -58,11 +56,11 @@ public:
         {
             if (temps[i] > getAverage()) // using getAverage() and checking against the items in array
             {
-                aboveAverage += 1;
+                counters[2] += 1;
                 // cout<<temps[i]<<endl;
             }
         }
-        return aboveAverage;
+        return counters[2];
     };
 
     int getBelowAverage() //Function to get number of days BELOW average
@@ -71,11 +69,11 @@ public:
         {
             if (temps[i] < getAverage()) // using getAverage() and checking against the items in array
             {
-                belowAverage += 1;
+                counters[0] += 1;
                 // cout<<temps[i]<<endl; // Checking to see if the temps were being read correctly
             }
         }
-        return belowAverage;
+        return counters[0];
     };
 
     int getEqualAverage() // Function to get number of days EQUAL to average
@@ -84,10 +82,10 @@ public:
         {
             if (temps[i] == getAverage()) // using getAverage() and checking against the items in array
             {
-                equalAverage += 1;
+                counters[1] += 1;
             }
         }
-        return equalAverage;
+        return counters[1];
     };
 };
 
