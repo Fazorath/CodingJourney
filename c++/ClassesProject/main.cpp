@@ -21,3 +21,75 @@
 
 #include <iostream>
 #include <fstream>
+#include <string>
+
+using namespace std;
+
+class TempCheck {
+    private:
+        int daysAbove = 0;
+        int daysBelow = 0;
+        int daysEqual = 0;
+        int days = 0;
+        int totalTemp = 0;
+        int averageTemp = 0;
+        int temp = 0;
+        int tempArray[30] = {0};
+        double sum = 0;
+    
+    public:
+
+    void readtxt() {
+        ifstream file("NovTemps.txt");
+        if (!file) {
+            cout << "Unable to open file";
+            return; // exit if file not found
+        }
+
+        string line;
+        while (getline(file, line)) {
+            sum = stod(line);
+            days++;
+        }
+        cout << "Days: " << days << endl;
+        cout << "Sum: " << sum << endl;
+        file.close();
+    }
+    int getAverage() {
+        averageTemp = sum / days;
+        return averageTemp;
+    }
+
+
+};
+
+
+
+int main() {
+    // ifstream file("NovTemps.txt");
+    // if (!file) {
+    //     cout << "Unable to open file";
+    //     return 1; // exit if file not found
+    // }
+
+    // string line;
+    // double sum = 0;
+    // int count = 0;
+    // while (getline(file, line)) {
+    //     sum += stod(line);
+    //     count++;
+    // }
+
+    // if (count > 0) {
+    //     double average = sum / count;
+    //     cout << "Average: " << average << endl;
+    // }
+
+    // file.close();
+    // return 0;
+
+    TempCheck temp;
+    temp.readtxt();
+    temp.getAverage();
+    // cout << temp.getAverage() << endl;
+}
