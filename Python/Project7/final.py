@@ -25,7 +25,6 @@ class CSVtoJSON:
         ## Holds the JSON string
         self.data = []
 
-
     def read_txt_file(self):
       
         try: ## Exception handling
@@ -40,7 +39,6 @@ class CSVtoJSON:
             self.read_filename = file_read ## Assigning the contents of the text file to the read_filename variable
             # print(file_read) ## Checks
   
-
     def assign_header(self): ## Assigns the header of the txt file
         self.header = self.read_filename[0].strip().split(",")  ## Strips the header of the txt file and splits it by the comma
         # print(self.read_filename[2]) ##checking to see if this could work to pair values together
@@ -54,7 +52,6 @@ class CSVtoJSON:
                 row[self.header[i]] = lines[i] ## Assigns the header to the row
             self.data.append(row) ## Appends the row to the data variable previously created
         # print(self.data) ## Checks the data variable
-
 
     def create_json_string(self): ## Creates the JSON strings
         counter = 1 ## Counter for the JSON string
@@ -80,11 +77,9 @@ class CSVtoJSON:
         json += "}" ## Adds the closing curly brace to the json string
         return json ## Returns the json string
  
-
     def returnJsonString(self):
         print(self.create_json_string()) ## Prints to the JSON to Console
      
-
     def write_json_file(self): ## Writes the JSON string to a file
         try: ## Exception handling
             with open(self.output_fileName, "w") as f:
@@ -95,9 +90,6 @@ class CSVtoJSON:
             print(f"\nOutput Written to {self.output_fileName}") ## Confirm the completion of writing the file
 
        
-
-
-
 if __name__ == "__main__":
     ## Creates instance of class
     project7 = CSVtoJSON()
