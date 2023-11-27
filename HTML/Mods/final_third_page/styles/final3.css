@@ -1,0 +1,41 @@
+html {
+    background-color: rgb(210, 202, 202);
+    font-family: 'Playfair Display', Times, serif;
+    font-size: larger;
+}
+
+body {
+    padding: 0;
+    width: 95%;
+    max-width: 1300px;
+    margin: 0 auto;
+    border-bottom: 4px solid black;
+    border-left: 4px solid black;
+    border-right: 4px solid black;
+    border-top: 4px solid black;
+}
+
+header {
+    /* Header Settings*/
+    text-align: center;
+    margin: auto;
+    max-width: 40%;
+    padding-right: 140px;
+}
+
+header img {
+    /* Image Changes*/
+    float: left;
+    width: 120px;
+    position: relative;
+    left: 126px;
+    top: -4px;
+}
+
+footer {
+    text-align: center;
+    font-size: 80%;
+    border-top: 2px solid grey;
+    border-top: 2px solid gray;
+    font-size: 12px;
+}
