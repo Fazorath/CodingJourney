@@ -6,8 +6,8 @@ html {
 
 body {
     padding: 0;
-    width: 95%;
-    max-width: 1300px;
+    max-width: 1000px;
+    width: 98%;
     margin: 0 auto;
     border-bottom: 4px solid black;
     border-left: 4px solid black;
@@ -20,22 +20,63 @@ header {
     text-align: center;
     margin: auto;
     max-width: 40%;
-    padding-right: 140px;
+    padding-right: 10%;
 }
 
 header img {
     /* Image Changes*/
     float: left;
-    width: 120px;
+    max-width: 120px;
+    width: 100%;
+    height: auto;
     position: relative;
-    left: 126px;
-    top: -4px;
+    left: 61px;
+    top: -8px;
 }
 
 footer {
     text-align: center;
     font-size: 80%;
     border-top: 2px solid grey;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    float: left;
+    display: block;
+    text-align: center;
+    /* padding: 7% 10%; */
+}
+
+li a {
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 10px 10%;
+    width: 100%;
+    max-width: 200px;
+    min-width: 100px;
+    
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.active {
+    color: rgb(253, 9, 9);
+}
+
+footer {
     border-top: 2px solid gray;
     font-size: 12px;
 }
