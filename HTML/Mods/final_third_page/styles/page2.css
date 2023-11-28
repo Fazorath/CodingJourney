@@ -29,8 +29,8 @@ section p {
 }
 
 section div {
-    padding: 15px;
-    margin-right: 5px;
+    padding: 1.875%;
+    margin-right: 0.625%;
 
 }
 
@@ -38,7 +38,7 @@ aside {
     width: 20%;
     float: right;
     /* border: 2px solid black; */
-    padding-left: 27px;
+    padding-left: 3%;
     /* border-right: 4px solid black;
     border-bottom: 4px solid black; */
     height: 982px;
@@ -55,7 +55,7 @@ aside dt {
 }
 
 aside dd {
-    padding: 5px;
+    padding: 3%;
 }
 
 header {
@@ -63,7 +63,7 @@ header {
     text-align: center;
     margin: auto;
     max-width: 40%;
-    padding-right: 140px;
+    padding-right: 7%;
 }
 
 header img {
@@ -99,7 +99,7 @@ li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 5% 8%;
     width: 200px;
     text-decoration: none;
 }
@@ -121,11 +121,11 @@ audio {
 }
 
 .button-left {
-    margin-top: 15px;
+    margin-top: 1%;
 }
 
 .button-right {
-    margin-top: 15px
+    margin-top: 1%
 }
 
 footer {
