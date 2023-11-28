@@ -3,6 +3,9 @@ html {
     font-family: 'Playfair Display', Times, serif;
     font-size: larger;
 }
+* {
+    box-sizing: border-box;
+  }
 
 body {
     padding: 0;
@@ -54,21 +57,20 @@ li {
     float: left;
     display: block;
     text-align: center;
-    /* padding: 7% 10%; */
+    padding: 1.2% 1%;
 }
 
 li a {
     color: white;
     display: block;
     text-decoration: none;
-    padding: 10px 10%;
     width: 100%;
     max-width: 200px;
     min-width: 100px;
     
 }
 
-li a:hover {
+li:hover {
     background-color: #111;
 }
 
@@ -80,3 +82,22 @@ footer {
     border-top: 2px solid gray;
     font-size: 12px;
 }
+
+.Row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 33%;
+    padding: 0 8px;
+    width: 80%;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    border: 2px solid black;
+  }
+
