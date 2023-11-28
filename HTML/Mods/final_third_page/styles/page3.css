@@ -105,18 +105,20 @@ footer {
   main p{
     text-align: center; 
     padding: 1.2%;
+    display: block;
   }
   .column img {
     margin-top: 1%;
     vertical-align: middle;
     border: 2px solid black;
     width: 32%;
+    height: auto;
   }
 
   
   @media screen and (max-width: 900px) {
     .column {
-        flex: 65%;
+        flex: 33%;
 }  
 }
     @media screen and (max-width: 767px) {
