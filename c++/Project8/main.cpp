@@ -18,9 +18,10 @@ class SortNames
 private:
     static const int ISIZE = 30;
     string names[ISIZE];
-    bool display = true;
 
 public:
+    bool display = true; // used to determine if the file was opened because my display function would disply
+                         // the emtpy array if the file was not opened which look ugly
     void readNames()
     {
         ifstream inputFile("Names.txt");
@@ -35,7 +36,7 @@ public:
         else
         {
             cout << "Error opening file" << endl;
-            bool display = false;
+            display = false; // display bool to false if file was not opened
         }
     }
     void sortNames()
@@ -72,8 +73,8 @@ int main(){
     SortNames names;
     names.readNames();
     names.sortNames();
-    if (bool display = true){
-        names.displayNames();
+    if (names.display){ // if file was opened display the sorted names
+        names.displayNames(); 
     }
     return 0;
 }
