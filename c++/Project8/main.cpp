@@ -59,7 +59,6 @@ public:
             names[i] = minValue;
         }
     }
-
     void displayNames()
     {
         for (int i = 0; i < ISIZE; i++)
