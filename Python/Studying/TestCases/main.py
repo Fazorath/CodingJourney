@@ -12,7 +12,7 @@ class BinaryToHexConverterTest(unittest.TestCase):
     def test_single_digit(self):
         # Test a single hex value between 0 and 9
         expected = '9'
-        result = self.singler.hexValue
+        result = self.single.hexValue
         self.assertEqual(result, expected, "Conversion failed for a single digit.")
 
     def test_single_letter(self):
