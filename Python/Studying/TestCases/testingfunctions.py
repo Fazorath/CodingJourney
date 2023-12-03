@@ -23,9 +23,11 @@ class NamesTestCase(unittest.TestCase):
     def test_first_last_name(self):
         """Do names like 'Janis Joplin' work?"""
         # instance of the function we want to test
-        formatted_name = get_formatted_name("JANIS","joplin")
+        # formatted_name = get_formatted_name("Joplin","JANIS")
+        formatted_name = get_formatted_name("janis","joplin")
         valuestest = formatted_name
         self.assertEqual(valuestest, "Janis Joplin")
+
 
 if __name__ == "__main__":
     unittest.main()
