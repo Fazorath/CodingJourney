@@ -63,8 +63,8 @@ class ConvertBin2Hex:
 
 
 def main():
-    myValue=ConvertBin2Hex("1111 1110")
-    
+    myValue=ConvertBin2Hex("1111")
+
     
     print(myValue.hexValue)
     
